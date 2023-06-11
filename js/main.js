@@ -1,0 +1,125 @@
+window.addEventListener("load", function() {
+
+    // DONUT PARALLAX EFFECT
+
+    var logo = document.getElementById("masthead-logo");
+    var topDonutRow = document.getElementById("top-donut-row");
+    var middleDonutRow = document.getElementById("middle-donut-row");
+    var bottomDonutRow = document.getElementById("bottom-donut-row");
+    var dm1 = document.getElementById("dm1");
+    var dm3 = document.getElementById("dm3");
+    var dm4 = document.getElementById("dm4");
+    var dm5 = document.getElementById("dm5");
+    var db1 = document.getElementById("db1");
+    var db3 = document.getElementById("db3");
+    var db4 = document.getElementById("db4");
+    var db5 = document.getElementById("db5");
+    var db6 = document.getElementById("db6");
+    var db7 = document.getElementById("db7");
+    var db8 = document.getElementById("db8");
+    var db9 = document.getElementById("db9");
+    var dbl = document.getElementById("dbl");
+    var dbr = document.getElementById("dbr");
+    var section2 = document.getElementById("section-2-home");
+    var sprinklesVideo = document.getElementById("sprinkles-video")
+
+
+    window.addEventListener("scroll", function() {
+
+        let scroll = window.scrollY/5;
+
+        // logo
+        logo.style.marginTop = (scroll*2.75)+50 + "px";
+
+        // top donut
+        topDonutRow.style.marginTop = "-" + scroll + "px";
+
+        // middle donuts
+        middleDonutRow.style.marginTop = "-" + scroll*1.5 + "px";
+        dm1.style.marginTop = "-" + ((scroll*1.1)+65) + "px";
+        dm3.style.marginTop = "-" + (scroll+65) + "px";
+        dm4.style.marginTop = "-" + ((scroll*1.2)+100) + "px";
+        dm5.style.marginTop = "-" + ((scroll*1.9)+65) + "px";
+
+        // bottom donuts
+        bottomDonutRow.style.marginTop = "-" + scroll*3 + "px";
+        db1.style.marginTop = "-" + (scroll+65) + "px";
+        db3.style.marginTop = "-" + ((scroll*1.2)+65) + "px";
+        db4.style.marginTop = "-" + ((scroll*0.5)+80) + "px";
+        db5.style.marginTop = "-" + ((scroll*1.1)+65) + "px";
+        db6.style.marginTop = "-" + ((scroll*0.2)+80) + "px";
+        db7.style.marginTop = "-" + ((scroll*1.4)+65) + "px";
+        db8.style.marginTop = "-" + ((scroll*0.1)+128) + "px";
+        db9.style.marginTop = "-" + ((scroll*0.4)+90) + "px";
+        dbl.style.marginTop = "-" + scroll*2.5 + "px";
+        dbr.style.marginTop = "-" + scroll*2.3 + "px";
+
+        // solid block
+        section2.style.marginTop = "-" + ((scroll*3)+100) + "px";
+
+        // sprinkles video
+        sprinklesVideo.style.marginTop =  (scroll*4-200) + "px";
+
+    });
+
+    // END DONUT PARALLAX EFFECT
+
+    // MAGNETIC SPRINKLES
+
+
+
+
+
+
+
+
+/*
+
+    document.querySelector("body").addEventListener("mousemove", magneticSprinkles);
+
+    function magneticSprinkles() {
+
+        var spr = document.querySelectorAll(".home-sprinkle");
+
+        spr.forEach(function (spr) {
+
+            // rotate
+
+            let x = (spr.getBoundingClientRect().left) + (spr.clientWidth / 2);
+            let y = (spr.getBoundingClientRect().top) + (spr.clientHeight / 2);
+            let radian = Math.atan2(event.pageX - x,event.pageY - y);
+            let rot = (radian * (180/ Math.PI) * -1) + 270;
+            spr.style.transform = "rotate(" + rot + "deg)";
+
+            // follow mouse
+
+            let mousePosX = event.clientX;
+            let mousePosY = event.clientY;
+
+            spr.style.left = mousePosX + "px";
+            spr.style.top = mousePosY + "px";
+
+
+        });
+
+
+    } */
+
+
+    $('#sprinkle-1').click(function(e){
+
+        var spr = document.getElementById("sprinkle-1");
+
+        var rect = spr.getBoundingClientRect();
+        //console.log(rect.top, rect.right, rect.bottom, rect.left);
+
+        console.log(e.clientY - rect.top);
+        console.log(e.clientX - rect.left)
+
+    });
+
+
+
+});
+
+
