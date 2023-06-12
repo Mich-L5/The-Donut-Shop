@@ -108,12 +108,6 @@ window.addEventListener("load", function() {
 
 
 
-
-
-
-
-
-
     // event listener for mouseover the sprinkles
     document.getElementById("sprinkle-1").addEventListener("mouseover", function(e) {
 
@@ -147,13 +141,6 @@ window.addEventListener("load", function() {
 
         // get current left value
         leftBoxVal = window.innerWidth*0.45;
-
-
-
-
-
-
-
 
 
 
@@ -222,6 +209,9 @@ window.addEventListener("load", function() {
             }
 
         }
+
+
+
 
 
 
@@ -323,7 +313,17 @@ window.addEventListener("load", function() {
     // END MAGNETIC SPRINKLES
 
 
+/*
 
+to do:
+
+1. add the functionality to corner hovers
+2. fix section 2-3 intersection when resizing window (maybe change to still img when tablet size)
+3. change sprinkle img src when resizing window
+4. change where sprinkles appear too when resizing window (?)
+5. make sprinkles behind see thru text (z-index)
+
+ */
 
 
 
