@@ -75,8 +75,37 @@ window.addEventListener("load", function() {
     var bottomVal;
 
     // set box top and left variables for changing values
-    var topBoxVal;
     var leftBoxVal;
+
+    var topBoxVal = document.getElementById("donuts-video").getBoundingClientRect().height;
+
+    // map values to range below
+    // 768px W = 180px , 1920px W = -475px
+    let width = window.innerWidth;
+    let cropValue = (-475 - 180) * (width - 768) / (1920 - 768) + 180;
+    topBoxVal = topBoxVal+cropValue;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    window.addEventListener("resize", function () {
+        topBoxVal = document.getElementById("donuts-video").offsetHeight;
+    });
+
+
 
     // event listener for mouseover the sprinkles
     document.getElementById("sprinkle-1").addEventListener("mouseover", function(e) {
@@ -109,10 +138,12 @@ window.addEventListener("load", function() {
             bottomVal = Number(spr.style.bottom.slice(0, -2));
         }
 
-        // get current left and top values (need to do even listener for resizing)
-        leftBoxVal = window.innerWidth/2;
-        topBoxVal = document.getElementById("section-2-home").getBoundingClientRect().height;
-        console.log(topBoxVal);
+        // get current left value
+        leftBoxVal = window.innerWidth*0.45;
+
+
+
+
 
 
 
@@ -215,7 +246,15 @@ window.addEventListener("load", function() {
 
         // right hover
         else if (hoverPosX >= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
-            spr.style.right = (Number(rightPx)+120) + "px";
+
+
+            if ((rightVal+120) > leftBoxVal) {
+                spr.style.right = leftBoxVal + "px";
+            }
+
+            else {
+                spr.style.right = (Number(rightPx)+120) + "px";
+            }
 
             if (rotateState === 1) {
                 spr.style.transform = "rotate(268deg)";
@@ -233,6 +272,8 @@ window.addEventListener("load", function() {
 
             if ((bottomVal-120) < 0) {
                 spr.style.bottom = "-20px";
+
+               // spr.style.bottom = -20*(bottomVal*0.5) + "px"
             }
 
             else {
@@ -251,7 +292,17 @@ window.addEventListener("load", function() {
 
         // bottom hover
         else if (hoverPosY >= 50  && hoverPosX >= 25 && hoverPosX <= 75) {
-            spr.style.bottom = (Number(bottomPx)+120) + "px";
+
+            console.log(topBoxVal);
+
+            if ((bottomVal+120) > topBoxVal-100) {
+                spr.style.bottom = topBoxVal + "px";
+
+            }
+
+            else {
+                spr.style.bottom = (Number(bottomPx)+120) + "px";
+            }
 
             if (rotateState === 1) {
                 spr.style.transform = "rotate(355deg)";
