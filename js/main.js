@@ -1,5 +1,6 @@
 window.addEventListener("load", function() {
 
+
     // DONUT PARALLAX EFFECT
 
     var logo = document.getElementById("masthead-logo");
@@ -61,153 +62,208 @@ window.addEventListener("load", function() {
         sprinklesVideo.style.marginTop =  (scroll*4-200) + "px";
 
     });
-
     // END DONUT PARALLAX EFFECT
+
 
     // MAGNETIC SPRINKLES
 
-
-
-
+    // set rotation state to toggle between two states
     var rotateState = 1;
 
+    // set right and bottom variables for changing values
+    var rightVal;
+    var bottomVal;
+
+    // set box top and left variables for changing values
+    var topBoxVal;
+    var leftBoxVal;
+
+    // event listener for mouseover the sprinkles
     document.getElementById("sprinkle-1").addEventListener("mouseover", function(e) {
 
-        var spr1 = document.getElementById("sprinkle-1");
-        var rect = spr1.getBoundingClientRect();
+        let spr = document.getElementById("sprinkle-1");
 
+        // get the sprinkle's position
+        let pos = spr.getBoundingClientRect();
 
-
-
-        let hoverPosX = e.clientX - rect.left;
-        let hoverPosY = e.clientY - rect.top;
+        // get the current hover coordinates over the sprinkle graphic
+        let hoverPosX = e.clientX - pos.left;
+        let hoverPosY = e.clientY - pos.top;
 
         // get current bottom and right pixels:
-        let spr1Style = window.getComputedStyle(spr1, null);
-        let rightPx = spr1Style.getPropertyValue("right").slice(0, -2);
-        let bottomPx = spr1Style.getPropertyValue("bottom").slice(0, -2);
+        let sprStyle = window.getComputedStyle(spr, null);
+        let rightPx = sprStyle.getPropertyValue("right").slice(0, -2);
+        let bottomPx = sprStyle.getPropertyValue("bottom").slice(0, -2);
+
+        // get current right and bottom values
+        if (!spr.style.right) {
+            rightVal = Number(getComputedStyle(spr).right.slice(0, -2));
+        }
+        else {
+            rightVal = Number(spr.style.right.slice(0, -2));
+        }
+        if (!spr.style.bottom) {
+            bottomVal = Number(getComputedStyle(spr).bottom.slice(0, -2));
+        }
+        else {
+            bottomVal = Number(spr.style.bottom.slice(0, -2));
+        }
+
+        // get current left and top values (need to do even listener for resizing)
+        leftBoxVal = window.innerWidth/2;
+        topBoxVal = document.getElementById("section-2-home").getBoundingClientRect().height;
+        console.log(topBoxVal);
 
 
 
 
+
+
+        // move and rotate the sprinkle on every hover
+        // bottom right hover
         if (hoverPosX >= 75 && hoverPosY >= 75) {
-            spr1.style.right = (Number(rightPx)+60) + "px";
-            spr1.style.bottom = (Number(bottomPx)+60) + "px";
+
+            spr.style.right = (Number(rightPx)+60) + "px";
+            spr.style.bottom = (Number(bottomPx)+60) + "px";
 
             if (rotateState === 1) {
-                spr1.style.transform = "rotate(45deg)";
+                spr.style.transform = "rotate(45deg)";
                 rotateState = 0;
             }
             else {
-                spr1.style.transform = "rotate(145deg)";
+                spr.style.transform = "rotate(145deg)";
                 rotateState = 1;
             }
 
-            console.log("1");
-
         }
+
+        // bottom left hover
         else if (hoverPosX <= 25 && hoverPosY >= 75) {
-            spr1.style.right = (Number(rightPx)-60) + "px";
-            spr1.style.bottom = (Number(bottomPx)+60) + "px";
+            spr.style.right = (Number(rightPx)-60) + "px";
+            spr.style.bottom = (Number(bottomPx)+60) + "px";
 
             if (rotateState === 1) {
-                spr1.style.transform = "rotate(94deg)";
+                spr.style.transform = "rotate(94deg)";
                 rotateState = 0;
             }
             else {
-                spr1.style.transform = "rotate(3deg)";
+                spr.style.transform = "rotate(3deg)";
                 rotateState = 1;
             }
-            console.log("2");
+
         }
+
+        // top right hover
         else if (hoverPosX >= 75 && hoverPosY <= 25) {
-            spr1.style.right = (Number(rightPx)+60) + "px";
-            spr1.style.bottom = (Number(bottomPx)-60) + "px";
+            spr.style.right = (Number(rightPx)+60) + "px";
+            spr.style.bottom = (Number(bottomPx)-60) + "px";
 
             if (rotateState === 1) {
-                spr1.style.transform = "rotate(143deg)";
+                spr.style.transform = "rotate(143deg)";
                 rotateState = 0;
             }
             else {
-                spr1.style.transform = "rotate(64deg)";
+                spr.style.transform = "rotate(64deg)";
                 rotateState = 1;
             }
-            console.log("3");
+
         }
+
+        // top left hover
         else if (hoverPosX <= 25 && hoverPosY <= 25) {
-            spr1.style.right = (Number(rightPx)-60) + "px";
-            spr1.style.bottom = (Number(bottomPx)-60) + "px";
+            spr.style.right = (Number(rightPx)-60) + "px";
+            spr.style.bottom = (Number(bottomPx)-60) + "px";
 
             if (rotateState === 1) {
-                spr1.style.transform = "rotate(196deg)";
+                spr.style.transform = "rotate(196deg)";
                 rotateState = 0;
             }
             else {
-                spr1.style.transform = "rotate(111deg)";
+                spr.style.transform = "rotate(111deg)";
                 rotateState = 1;
             }
-            console.log("4");
+
         }
 
 
+
+
+
+
+
+        // left hover
         else if (hoverPosX <= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
-            spr1.style.right = (Number(rightPx)-120) + "px";
+
+            if ((rightVal-120) < 0) {
+                spr.style.right = "-20px";
+            }
+
+            else {
+                spr.style.right = (Number(rightPx)-120) + "px";
+            }
 
             if (rotateState === 1) {
-                spr1.style.transform = "rotate(229deg)";
+                spr.style.transform = "rotate(229deg)";
                 rotateState = 0;
             }
             else {
-                spr1.style.transform = "rotate(170deg)";
+                spr.style.transform = "rotate(170deg)";
                 rotateState = 1;
             }
-            console.log("5");
         }
+
+
+        // right hover
         else if (hoverPosX >= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
-            spr1.style.right = (Number(rightPx)+120) + "px";
+            spr.style.right = (Number(rightPx)+120) + "px";
 
             if (rotateState === 1) {
-                spr1.style.transform = "rotate(268deg)";
+                spr.style.transform = "rotate(268deg)";
                 rotateState = 0;
             }
             else {
-                spr1.style.transform = "rotate(203deg)";
+                spr.style.transform = "rotate(203deg)";
                 rotateState = 1;
             }
-            console.log("6");
         }
+
+
+        // top hover
         else if (hoverPosY <= 50 && hoverPosX >= 25 && hoverPosX <= 75) {
-            spr1.style.bottom = (Number(bottomPx)-120) + "px";
+
+            if ((bottomVal-120) < 0) {
+                spr.style.bottom = "-20px";
+            }
+
+            else {
+                spr.style.bottom = (Number(bottomPx)-120) + "px";
+            }
 
             if (rotateState === 1) {
-                spr1.style.transform = "rotate(328deg)";
+                spr.style.transform = "rotate(328deg)";
                 rotateState = 0;
             }
             else {
-                spr1.style.transform = "rotate(207deg)";
+                spr.style.transform = "rotate(207deg)";
                 rotateState = 1;
             }
-            console.log("7");
         }
+
+        // bottom hover
         else if (hoverPosY >= 50  && hoverPosX >= 25 && hoverPosX <= 75) {
-            spr1.style.bottom = (Number(bottomPx)+120) + "px";
+            spr.style.bottom = (Number(bottomPx)+120) + "px";
 
             if (rotateState === 1) {
-                spr1.style.transform = "rotate(355deg)";
+                spr.style.transform = "rotate(355deg)";
                 rotateState = 0;
             }
             else {
-                spr1.style.transform = "rotate(302deg)";
+                spr.style.transform = "rotate(302deg)";
                 rotateState = 1;
             }
-            console.log("8");
         }
-
-
-
 
     });
-
     // END MAGNETIC SPRINKLES
 
 
