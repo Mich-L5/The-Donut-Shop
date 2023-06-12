@@ -106,6 +106,7 @@ window.addEventListener("load", function() {
     } */
 
 
+
     $('#sprinkle-1').click(function(e){
 
         var spr = document.getElementById("sprinkle-1");
@@ -114,9 +115,121 @@ window.addEventListener("load", function() {
         //console.log(rect.top, rect.right, rect.bottom, rect.left);
 
         console.log(e.clientY - rect.top);
-        console.log(e.clientX - rect.left)
+        console.log(e.clientX - rect.left);
 
     });
+
+
+    document.getElementById("sprinkle-1").addEventListener("mouseover", function(e) {
+
+        var spr1 = document.getElementById("sprinkle-1");
+        var rect = spr1.getBoundingClientRect();
+
+
+       // console.log(e.clientY - rect.top);
+       // console.log(e.clientX - rect.left);
+
+
+
+
+
+
+
+
+        // to keep:
+
+        let hoverPosX = e.clientX - rect.left;
+        let hoverPosY = e.clientY - rect.top;
+
+        // get current bottom pixels, right pixels, and rotate:
+        let spr1Style = window.getComputedStyle(spr1, null);
+        let rightPx = spr1Style.getPropertyValue("right").slice(0, -2);
+        let bottomPx = spr1Style.getPropertyValue("bottom").slice(0, -2);
+        let rotate = spr1Style.getPropertyValue("transform");
+
+
+        // left off: getting the rotate value, and then lower below, for each scenario, add a rotation to existing rotation
+        // also make sure sprinkles stop before going off screen
+        console.log(rotate);
+
+
+
+
+
+       // spr1.style.right = (Number(rightPx)+30) + "px";
+       // spr1.style.bottom = (Number(bottomPx)+30) + "px";
+
+        /*
+        if (hoverPosX > 22) {
+            spr1.style.right = (Number(rightPx)+60) + "px";
+        }
+        else {
+            spr1.style.right = (Number(rightPx)-60) + "px";
+        }
+
+        if (hoverPosY > 22) {
+            spr1.style.bottom = (Number(bottomPx)+60) + "px";
+        }
+        else {
+            spr1.style.bottom = (Number(bottomPx)-60) + "px";
+        } */
+
+
+
+
+        if (hoverPosX >= 75 && hoverPosY >= 75) {
+            spr1.style.right = (Number(rightPx)+60) + "px";
+            spr1.style.bottom = (Number(bottomPx)+60) + "px";
+            spr1.style.transform = "rotate(45deg)";
+        }
+        else if (hoverPosX <= 25 && hoverPosY >= 75) {
+            spr1.style.right = (Number(rightPx)-60) + "px";
+            spr1.style.bottom = (Number(bottomPx)+60) + "px";
+        }
+        else if (hoverPosX >= 75 && hoverPosY <= 25) {
+            spr1.style.right = (Number(rightPx)+60) + "px";
+            spr1.style.bottom = (Number(bottomPx)-60) + "px";
+        }
+        else if (hoverPosX <= 25 && hoverPosY <= 25) {
+            spr1.style.right = (Number(rightPx)-60) + "px";
+            spr1.style.bottom = (Number(bottomPx)-60) + "px";
+        }
+
+
+        else if (hoverPosX <= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
+            spr1.style.right = (Number(rightPx)-120) + "px";
+        }
+        else if (hoverPosX >= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
+            spr1.style.right = (Number(rightPx)+120) + "px";
+        }
+        else if (hoverPosY <= 50 && hoverPosX >= 25 && hoverPosX <= 75) {
+            spr1.style.bottom = (Number(bottomPx)-120) + "px";
+        }
+        else if (hoverPosY >= 50  && hoverPosX >= 25 && hoverPosX <= 75) {
+            spr1.style.bottom = (Number(bottomPx)+120) + "px";
+        }
+
+
+
+/*
+        let x = (spr1.getBoundingClientRect().left) + (spr1.clientWidth / 2);
+        let y = (spr1.getBoundingClientRect().top) + (spr1.clientHeight / 2);
+        let radian = Math.atan2(event.pageX - x,event.pageY - y);
+        let rot = (radian * (180/ Math.PI) * -1) + 270;
+        spr1.style.transform = "rotate(" + rot + "deg)";
+
+
+ */
+
+
+
+
+    });
+
+
+
+
+
 
 
 

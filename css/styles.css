@@ -201,16 +201,14 @@ p, button {
 
 
 .home-sprinkle {
-    width: 25px;
+    width: 100px;
     height: auto;
     transition: all ease 0.5s;
+    transform: rotate(0deg);
     position: absolute;
     z-index: 9;
     bottom: 0px;
     right: 40px;
-    background-color: greenyellow;
-
-
 }
 
 
