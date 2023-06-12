@@ -74,36 +74,43 @@ window.addEventListener("load", function() {
     var rightVal;
     var bottomVal;
 
-    // set box top and left variables for changing values
+    // set box top, bottom and left variables for changing values
     var leftBoxVal;
 
     var topBoxVal = document.getElementById("donuts-video").getBoundingClientRect().height;
 
     // map values to range below
     // 768px W = 180px , 1920px W = -475px
-    let width = window.innerWidth;
-    let cropValue = (-475 - 180) * (width - 768) / (1920 - 768) + 180;
+    var width = window.innerWidth;
+    var cropValue = (-475 - 180) * (width - 768) / (1920 - 768) + 180;
     topBoxVal = topBoxVal+cropValue;
 
+    var bottomBoxVal = 0 + cropValue;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // reset box top and bottom values whenever window is resized (as video block resizes)
     window.addEventListener("resize", function () {
+
         topBoxVal = document.getElementById("donuts-video").offsetHeight;
+
+        // map values to range below
+        // 768px W = 180px , 1920px W = -475px
+        width = window.innerWidth;
+        cropValue = (-475 - 180) * (width - 768) / (1920 - 768) + 180;
+        topBoxVal = topBoxVal+cropValue;
+
+        bottomBoxVal = 0 + cropValue;
     });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -270,15 +277,15 @@ window.addEventListener("load", function() {
         // top hover
         else if (hoverPosY <= 50 && hoverPosX >= 25 && hoverPosX <= 75) {
 
-            if ((bottomVal-120) < 0) {
-                spr.style.bottom = "-20px";
+            if ((bottomVal-120) < bottomBoxVal+35) {
+                spr.style.bottom = bottomBoxVal+35 + "px";
 
-               // spr.style.bottom = -20*(bottomVal*0.5) + "px"
             }
 
             else {
                 spr.style.bottom = (Number(bottomPx)-120) + "px";
             }
+
 
             if (rotateState === 1) {
                 spr.style.transform = "rotate(328deg)";
@@ -292,8 +299,6 @@ window.addEventListener("load", function() {
 
         // bottom hover
         else if (hoverPosY >= 50  && hoverPosX >= 25 && hoverPosX <= 75) {
-
-            console.log(topBoxVal);
 
             if ((bottomVal+120) > topBoxVal-100) {
                 spr.style.bottom = topBoxVal + "px";
