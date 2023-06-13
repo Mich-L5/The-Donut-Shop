@@ -369,13 +369,16 @@ window.addEventListener("load", function() {
     // END MAGNETIC SPRINKLES
 
 
+
+
 /*
 
 to do:
 
-2. fix section 2-3 intersection when resizing window (maybe change to still img when tablet size)
+2. fix sprinkles video (top gap when resizing window smaller) and gap between sections 2 and 3
 3. change sprinkle img src & position (bottom, right) when resizing window
 4. make sprinkles behind see thru text (z-index)
+
 
  */
 

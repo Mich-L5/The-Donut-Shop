@@ -142,7 +142,9 @@ p, button {
     height: auto;
 }
 
-
+#mobile-donut-sprinkles-bg {
+    display: none;
+}
 
 #section2-content {
     margin-top: -720px;
@@ -185,18 +187,7 @@ p, button {
     cursor: pointer;
 }
 
-/*
-#home-sprinkles-container {
-    background-color: rgba(173, 255, 47, 0.45);
-    width: 50%;
-    height: 678px;
-    position: absolute;
-    z-index: 100;
-    margin-top: -534px;
-    margin-bottom: -20px;
-    right: 0;
 
-}*/
 
 
 
@@ -209,6 +200,7 @@ p, button {
     z-index: 9;
     bottom: 0px;
     right: 40px;
+    background-color: greenyellow;
 }
 
 
@@ -223,4 +215,28 @@ p, button {
 }
 
 
+/* MEDIA QUERIES */
 
+/* remove sprinkles on mobile */
+@media screen and (max-width: 767px)  {
+
+    .home-sprinkle {
+        display: none;
+    }
+
+    #donuts-video {
+        display: none;
+    }
+
+    #mobile-donut-sprinkles-bg {
+        display: block;
+        height: 432px;
+        width: 100vw;
+        background-image: url("../img/3-donuts-falling-sprinkles-bg.png");
+        background-position: right;
+        background-size: cover;
+
+
+    }
+
+}
