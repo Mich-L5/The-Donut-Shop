@@ -375,9 +375,10 @@ window.addEventListener("load", function() {
 
 to do:
 
-2. fix sprinkles video (top gap when resizing window smaller) and gap between sections 2 and 3
-3. change sprinkle img src & position (bottom, right) when resizing window
-4. make sprinkles behind see thru text (z-index)
+1. upload to netlify to check responsiveness on mobile
+2. fix sprinkles video (top gap when resizing window smaller) and gap between sections 2 and 3, and all other responsiveness
+3. add all sprinkles
+4. change sprinkle img src (OR just resize? try both ways) & position (bottom, right) when resizing window
 
 
  */
