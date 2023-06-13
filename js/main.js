@@ -148,9 +148,24 @@ window.addEventListener("load", function() {
         // bottom right hover
         if (hoverPosX >= 75 && hoverPosY >= 75) {
 
-            spr.style.right = (Number(rightPx)+60) + "px";
-            spr.style.bottom = (Number(bottomPx)+60) + "px";
+            // position
+            if ((rightVal+60) > leftBoxVal) {
+                spr.style.right = leftBoxVal + "px";
+            }
 
+            else {
+                spr.style.right = (Number(rightPx)+60) + "px";
+            }
+
+            if ((bottomVal+60) > topBoxVal-100) {
+                spr.style.bottom = topBoxVal + "px";
+            }
+
+            else {
+                spr.style.bottom = (Number(bottomPx)+60) + "px";
+            }
+
+            // rotation
             if (rotateState === 1) {
                 spr.style.transform = "rotate(45deg)";
                 rotateState = 0;
@@ -164,8 +179,24 @@ window.addEventListener("load", function() {
 
         // bottom left hover
         else if (hoverPosX <= 25 && hoverPosY >= 75) {
-            spr.style.right = (Number(rightPx)-60) + "px";
-            spr.style.bottom = (Number(bottomPx)+60) + "px";
+
+            // position
+            if ((rightVal-60) < 0) {
+                spr.style.right = "-20px";
+            }
+
+            else {
+                spr.style.right = (Number(rightPx)-60) + "px";
+            }
+
+            if ((bottomVal+60) > topBoxVal-100) {
+                spr.style.bottom = topBoxVal + "px";
+            }
+
+            else {
+                spr.style.bottom = (Number(bottomPx)+60) + "px";
+            }
+
 
             if (rotateState === 1) {
                 spr.style.transform = "rotate(94deg)";
@@ -180,9 +211,25 @@ window.addEventListener("load", function() {
 
         // top right hover
         else if (hoverPosX >= 75 && hoverPosY <= 25) {
-            spr.style.right = (Number(rightPx)+60) + "px";
-            spr.style.bottom = (Number(bottomPx)-60) + "px";
 
+            // position
+            if ((rightVal+60) > leftBoxVal) {
+                spr.style.right = leftBoxVal + "px";
+            }
+
+            else {
+                spr.style.right = (Number(rightPx)+60) + "px";
+            }
+
+            if ((bottomVal-60) < bottomBoxVal+35) {
+                spr.style.bottom = bottomBoxVal+35 + "px";
+            }
+
+            else {
+                spr.style.bottom = (Number(bottomPx)-60) + "px";
+            }
+
+            // rotation
             if (rotateState === 1) {
                 spr.style.transform = "rotate(143deg)";
                 rotateState = 0;
@@ -196,9 +243,25 @@ window.addEventListener("load", function() {
 
         // top left hover
         else if (hoverPosX <= 25 && hoverPosY <= 25) {
-            spr.style.right = (Number(rightPx)-60) + "px";
-            spr.style.bottom = (Number(bottomPx)-60) + "px";
 
+            // position
+            if ((rightVal-60) < 0) {
+                spr.style.right = "-20px";
+            }
+
+            else {
+                spr.style.right = (Number(rightPx)-60) + "px";
+            }
+
+            if ((bottomVal-60) < bottomBoxVal+35) {
+                spr.style.bottom = bottomBoxVal+35 + "px";
+            }
+
+            else {
+                spr.style.bottom = (Number(bottomPx)-60) + "px";
+            }
+
+            // rotation
             if (rotateState === 1) {
                 spr.style.transform = "rotate(196deg)";
                 rotateState = 0;
@@ -210,18 +273,10 @@ window.addEventListener("load", function() {
 
         }
 
-
-
-
-
-
-
-
-
-
         // left hover
         else if (hoverPosX <= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
 
+            // position
             if ((rightVal-120) < 0) {
                 spr.style.right = "-20px";
             }
@@ -230,6 +285,7 @@ window.addEventListener("load", function() {
                 spr.style.right = (Number(rightPx)-120) + "px";
             }
 
+            // rotation
             if (rotateState === 1) {
                 spr.style.transform = "rotate(229deg)";
                 rotateState = 0;
@@ -240,11 +296,10 @@ window.addEventListener("load", function() {
             }
         }
 
-
         // right hover
         else if (hoverPosX >= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
 
-
+            // position
             if ((rightVal+120) > leftBoxVal) {
                 spr.style.right = leftBoxVal + "px";
             }
@@ -253,6 +308,7 @@ window.addEventListener("load", function() {
                 spr.style.right = (Number(rightPx)+120) + "px";
             }
 
+            // rotation
             if (rotateState === 1) {
                 spr.style.transform = "rotate(268deg)";
                 rotateState = 0;
@@ -263,20 +319,19 @@ window.addEventListener("load", function() {
             }
         }
 
-
         // top hover
         else if (hoverPosY <= 50 && hoverPosX >= 25 && hoverPosX <= 75) {
 
+            // position
             if ((bottomVal-120) < bottomBoxVal+35) {
                 spr.style.bottom = bottomBoxVal+35 + "px";
-
             }
 
             else {
                 spr.style.bottom = (Number(bottomPx)-120) + "px";
             }
 
-
+            // rotation
             if (rotateState === 1) {
                 spr.style.transform = "rotate(328deg)";
                 rotateState = 0;
@@ -290,15 +345,16 @@ window.addEventListener("load", function() {
         // bottom hover
         else if (hoverPosY >= 50  && hoverPosX >= 25 && hoverPosX <= 75) {
 
+            // position
             if ((bottomVal+120) > topBoxVal-100) {
                 spr.style.bottom = topBoxVal + "px";
-
             }
 
             else {
                 spr.style.bottom = (Number(bottomPx)+120) + "px";
             }
 
+            // rotation
             if (rotateState === 1) {
                 spr.style.transform = "rotate(355deg)";
                 rotateState = 0;
@@ -317,11 +373,9 @@ window.addEventListener("load", function() {
 
 to do:
 
-1. add the functionality to corner hovers
 2. fix section 2-3 intersection when resizing window (maybe change to still img when tablet size)
-3. change sprinkle img src when resizing window
-4. change where sprinkles appear too when resizing window (?)
-5. make sprinkles behind see thru text (z-index)
+3. change sprinkle img src & position (bottom, right) when resizing window
+4. make sprinkles behind see thru text (z-index)
 
  */
 
