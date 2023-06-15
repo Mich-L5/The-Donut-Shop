@@ -45,13 +45,25 @@ p, button {
 }
 
 #masthead-logo {
-    width: 1200px;
+    width: 1350px;
     height: auto;
     margin: 50px 0 -40px 0;
+
+
+}
+
+#masthead-logo-mobile {
+    display: none;
+    width: 500px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.masthead-logo {
     position: relative;
     z-index: -10;
     filter: drop-shadow(8px 5px 0px rgba(61, 193, 210, 0.37));
-
 }
 
 .masthead-donut {
@@ -225,7 +237,7 @@ p, button {
 @media screen and (max-width: 1700px)  {
 
   #masthead-logo {
-      width: 1100px;
+      width: 1200px;
   }
 
 }
@@ -245,6 +257,30 @@ p, button {
     }
 
 }
+
+@media screen and (max-width: 1000px)  {
+
+    #masthead-logo {
+        width: 800px;
+    }
+
+    #donut-container {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 830px)  {
+
+    #masthead-logo {
+        width: 710px;
+    }
+
+    #donut-container {
+        margin-top: 40px;
+    }
+
+}
+
 
 
 
@@ -266,6 +302,113 @@ p, button {
         background-image: url("../img/3-donuts-falling-sprinkles-bg.png");
         background-position: right;
         background-size: cover;
+    }
+
+
+
+}
+
+@media screen and (max-width: 730px)  {
+
+    #masthead-logo {
+        width: 650px;
+    }
+
+    #donut-container {
+        margin-top: 45px;
+    }
+
+    #sprinkles-video {
+        margin-bottom: 100px;
+    }
+
+}
+
+@media screen and (max-width: 665px)  {
+
+    #masthead-logo {
+        width: 600px;
+    }
+
+    #donut-container {
+        margin-top: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 615px)  {
+
+    #masthead-logo {
+        width: 550px;
+    }
+
+    #donut-container {
+        margin-top: 55px;
+    }
+
+}
+
+@media screen and (max-width: 565px)  {
+
+    #masthead-logo {
+        display: none;
+    }
+
+    #masthead-logo-mobile {
+        display: block;
+
+    }
+
+    #sprinkles-video {
+        width: 300%;
+        margin-bottom: 200px;
+    }
+
+}
+
+@media screen and (max-width: 515px)  {
+
+    #masthead-logo-mobile {
+        width: 450px;
+
+    }
+
+}
+
+@media screen and (max-width: 465px)  {
+
+    #masthead-logo-mobile {
+        width: 400px;
+        margin-bottom: 20px;
+
+    }
+
+}
+
+@media screen and (max-width: 410px)  {
+
+    #masthead-logo-mobile {
+        width: 370px;
+
+    }
+
+}
+
+@media screen and (max-width: 375px)  {
+
+    #masthead-logo-mobile {
+        width: 340px;
+
+    }
+
+}
+
+@media screen and (max-width: 345px)  {
+
+    #masthead-logo-mobile {
+        width: 310px;
+
     }
 
 }

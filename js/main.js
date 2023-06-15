@@ -1,9 +1,21 @@
 window.addEventListener("load", function() {
 
+    // SPRINKLES VIDEO DISAPPEAR (ONCE SCROLLED PASSED)
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 650) {
+            document.getElementById("sprinkles-video").style.display = "none";
+        }
+        else {
+            document.getElementById("sprinkles-video").style.display = "block";
+        }
+    });
+    // END SPRINKLES VIDEO DISAPPEAR
+
 
     // DONUT PARALLAX EFFECT
 
     var logo = document.getElementById("masthead-logo");
+    var mobileLogo = document.getElementById("masthead-logo-mobile");
     var topDonutRow = document.getElementById("top-donut-row");
     var middleDonutRow = document.getElementById("middle-donut-row");
     var bottomDonutRow = document.getElementById("bottom-donut-row");
@@ -27,13 +39,26 @@ window.addEventListener("load", function() {
 
     window.addEventListener("scroll", function() {
 
-        let scroll = window.scrollY/5;
+        if (window.innerWidth <= 565) {
+            var scroll = window.scrollY/10;
 
-        // logo
-        logo.style.marginTop = (scroll*2.75)+50 + "px";
+            // logo
+            mobileLogo.style.marginTop = (scroll*5.75)+50 + "px";
 
-        // top donut
-        topDonutRow.style.marginTop = "-" + scroll + "px";
+            // top donut
+            topDonutRow.style.marginTop = "-" + (scroll*10) + "px";
+        }
+        else {
+            var scroll = window.scrollY/5;
+
+            // logo
+            logo.style.marginTop = (scroll*2.75)+50 + "px";
+
+            // top donut
+            topDonutRow.style.marginTop = "-" + scroll + "px";
+        }
+
+
 
         // middle donuts
         middleDonutRow.style.marginTop = "-" + scroll*1.5 + "px";
@@ -375,7 +400,6 @@ window.addEventListener("load", function() {
 
 to do:
 
-1. upload to netlify to check responsiveness on mobile
 2. fix sprinkles video (top gap when resizing window smaller) and gap between sections 2 and 3, and all other responsiveness
 3. add all sprinkles
 4. change sprinkle img src (OR just resize? try both ways) & position (bottom, right) when resizing window
