@@ -90,307 +90,270 @@ window.addEventListener("load", function() {
     // END DONUT PARALLAX EFFECT
 
 
-    // MAGNETIC SPRINKLES
+    // MAGNETIC SPRINKLES (DESKTOP ONLY)
 
-    // set rotation state to toggle between two states
-    var rotateState = 1;
+    if (window.innerWidth > 768) {
 
-    // set right and bottom variables for changing values
-    var rightVal;
-    var bottomVal;
 
-    // set box top, bottom and left variables for changing values
-    var leftBoxVal;
+        // set rotation state to toggle between two states
+        var rotateState = 1;
 
-    var topBoxVal = document.getElementById("donuts-video").getBoundingClientRect().height;
+        // set right and bottom variables for changing values
+        var rightVal;
+        var bottomVal;
 
-    // map values to range below
-    // 768px W = 180px , 1920px W = -475px
-    var width = window.innerWidth;
-    var cropValue = (-475 - 180) * (width - 768) / (1920 - 768) + 180;
-    topBoxVal = topBoxVal+cropValue;
+        // set box top, bottom and left variables for changing values
+        var leftBoxVal;
 
-    var bottomBoxVal = 0 + cropValue;
-
-    // reset box top and bottom values whenever window is resized (as video block resizes)
-    window.addEventListener("resize", function () {
-
-        topBoxVal = document.getElementById("donuts-video").offsetHeight;
+        var topBoxVal = document.getElementById("donuts-video").getBoundingClientRect().height;
 
         // map values to range below
         // 768px W = 180px , 1920px W = -475px
-        width = window.innerWidth;
-        cropValue = (-475 - 180) * (width - 768) / (1920 - 768) + 180;
-        topBoxVal = topBoxVal+cropValue;
+        var width = window.innerWidth;
+        var cropValue = (-475 - 180) * (width - 768) / (1920 - 768) + 180;
+        topBoxVal = topBoxVal + cropValue;
 
-        bottomBoxVal = 0 + cropValue;
-    });
+        var bottomBoxVal = 0 + cropValue;
 
+        // reset box top and bottom values whenever window is resized (as video block resizes)
+        window.addEventListener("resize", function () {
 
+            topBoxVal = document.getElementById("donuts-video").offsetHeight;
 
+            // map values to range below
+            // 768px W = 180px , 1920px W = -475px
+            width = window.innerWidth;
+            cropValue = (-475 - 180) * (width - 768) / (1920 - 768) + 180;
+            topBoxVal = topBoxVal + cropValue;
 
-
-
-
-
-    // event listener for mouseover the sprinkles
-    document.getElementById("sprinkle-1").addEventListener("mouseover", function(e) {
-
-        let spr = document.getElementById("sprinkle-1");
-
-        // get the sprinkle's position
-        let pos = spr.getBoundingClientRect();
-
-        // get the current hover coordinates over the sprinkle graphic
-        let hoverPosX = e.clientX - pos.left;
-        let hoverPosY = e.clientY - pos.top;
-
-        // get current bottom and right pixels:
-        let sprStyle = window.getComputedStyle(spr, null);
-        let rightPx = sprStyle.getPropertyValue("right").slice(0, -2);
-        let bottomPx = sprStyle.getPropertyValue("bottom").slice(0, -2);
-
-        // get current right and bottom values
-        if (!spr.style.right) {
-            rightVal = Number(getComputedStyle(spr).right.slice(0, -2));
-        }
-        else {
-            rightVal = Number(spr.style.right.slice(0, -2));
-        }
-        if (!spr.style.bottom) {
-            bottomVal = Number(getComputedStyle(spr).bottom.slice(0, -2));
-        }
-        else {
-            bottomVal = Number(spr.style.bottom.slice(0, -2));
-        }
-
-        // get current left value
-        leftBoxVal = window.innerWidth*0.45;
+            bottomBoxVal = 0 + cropValue;
+        });
 
 
+        // event listener for mouseover the sprinkles
+        document.getElementById("sprinkle-1").addEventListener("mouseover", function (e) {
 
-        // move and rotate the sprinkle on every hover
-        // bottom right hover
-        if (hoverPosX >= 75 && hoverPosY >= 75) {
+            let spr = document.getElementById("sprinkle-1");
 
-            // position
-            if ((rightVal+60) > leftBoxVal) {
-                spr.style.right = leftBoxVal + "px";
+            // get the sprinkle's position
+            let pos = spr.getBoundingClientRect();
+
+            // get the current hover coordinates over the sprinkle graphic
+            let hoverPosX = e.clientX - pos.left;
+            let hoverPosY = e.clientY - pos.top;
+
+            // get current bottom and right pixels:
+            let sprStyle = window.getComputedStyle(spr, null);
+            let rightPx = sprStyle.getPropertyValue("right").slice(0, -2);
+            let bottomPx = sprStyle.getPropertyValue("bottom").slice(0, -2);
+
+            // get current right and bottom values
+            if (!spr.style.right) {
+                rightVal = Number(getComputedStyle(spr).right.slice(0, -2));
+            } else {
+                rightVal = Number(spr.style.right.slice(0, -2));
+            }
+            if (!spr.style.bottom) {
+                bottomVal = Number(getComputedStyle(spr).bottom.slice(0, -2));
+            } else {
+                bottomVal = Number(spr.style.bottom.slice(0, -2));
             }
 
-            else {
-                spr.style.right = (Number(rightPx)+60) + "px";
+            // get current left value
+            leftBoxVal = window.innerWidth * 0.45;
+
+
+            // move and rotate the sprinkle on every hover
+            // bottom right hover
+            if (hoverPosX >= 75 && hoverPosY >= 75) {
+
+                // position
+                if ((rightVal + 60) > leftBoxVal) {
+                    spr.style.right = leftBoxVal + "px";
+                } else {
+                    spr.style.right = (Number(rightPx) + 60) + "px";
+                }
+
+                if ((bottomVal + 60) > topBoxVal - 100) {
+                    spr.style.bottom = topBoxVal + "px";
+                } else {
+                    spr.style.bottom = (Number(bottomPx) + 60) + "px";
+                }
+
+                // rotation
+                if (rotateState === 1) {
+                    spr.style.transform = "rotate(45deg)";
+                    rotateState = 0;
+                } else {
+                    spr.style.transform = "rotate(145deg)";
+                    rotateState = 1;
+                }
+
             }
 
-            if ((bottomVal+60) > topBoxVal-100) {
-                spr.style.bottom = topBoxVal + "px";
+            // bottom left hover
+            else if (hoverPosX <= 25 && hoverPosY >= 75) {
+
+                // position
+                if ((rightVal - 60) < 0) {
+                    spr.style.right = "-20px";
+                } else {
+                    spr.style.right = (Number(rightPx) - 60) + "px";
+                }
+
+                if ((bottomVal + 60) > topBoxVal - 100) {
+                    spr.style.bottom = topBoxVal + "px";
+                } else {
+                    spr.style.bottom = (Number(bottomPx) + 60) + "px";
+                }
+
+
+                if (rotateState === 1) {
+                    spr.style.transform = "rotate(94deg)";
+                    rotateState = 0;
+                } else {
+                    spr.style.transform = "rotate(3deg)";
+                    rotateState = 1;
+                }
+
             }
 
-            else {
-                spr.style.bottom = (Number(bottomPx)+60) + "px";
+            // top right hover
+            else if (hoverPosX >= 75 && hoverPosY <= 25) {
+
+                // position
+                if ((rightVal + 60) > leftBoxVal) {
+                    spr.style.right = leftBoxVal + "px";
+                } else {
+                    spr.style.right = (Number(rightPx) + 60) + "px";
+                }
+
+                if ((bottomVal - 60) < bottomBoxVal + 35) {
+                    spr.style.bottom = bottomBoxVal + 35 + "px";
+                } else {
+                    spr.style.bottom = (Number(bottomPx) - 60) + "px";
+                }
+
+                // rotation
+                if (rotateState === 1) {
+                    spr.style.transform = "rotate(143deg)";
+                    rotateState = 0;
+                } else {
+                    spr.style.transform = "rotate(64deg)";
+                    rotateState = 1;
+                }
+
             }
 
-            // rotation
-            if (rotateState === 1) {
-                spr.style.transform = "rotate(45deg)";
-                rotateState = 0;
-            }
-            else {
-                spr.style.transform = "rotate(145deg)";
-                rotateState = 1;
-            }
+            // top left hover
+            else if (hoverPosX <= 25 && hoverPosY <= 25) {
 
-        }
+                // position
+                if ((rightVal - 60) < 0) {
+                    spr.style.right = "-20px";
+                } else {
+                    spr.style.right = (Number(rightPx) - 60) + "px";
+                }
 
-        // bottom left hover
-        else if (hoverPosX <= 25 && hoverPosY >= 75) {
+                if ((bottomVal - 60) < bottomBoxVal + 35) {
+                    spr.style.bottom = bottomBoxVal + 35 + "px";
+                } else {
+                    spr.style.bottom = (Number(bottomPx) - 60) + "px";
+                }
 
-            // position
-            if ((rightVal-60) < 0) {
-                spr.style.right = "-20px";
-            }
+                // rotation
+                if (rotateState === 1) {
+                    spr.style.transform = "rotate(196deg)";
+                    rotateState = 0;
+                } else {
+                    spr.style.transform = "rotate(111deg)";
+                    rotateState = 1;
+                }
 
-            else {
-                spr.style.right = (Number(rightPx)-60) + "px";
-            }
-
-            if ((bottomVal+60) > topBoxVal-100) {
-                spr.style.bottom = topBoxVal + "px";
-            }
-
-            else {
-                spr.style.bottom = (Number(bottomPx)+60) + "px";
             }
 
+            // left hover
+            else if (hoverPosX <= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
 
-            if (rotateState === 1) {
-                spr.style.transform = "rotate(94deg)";
-                rotateState = 0;
-            }
-            else {
-                spr.style.transform = "rotate(3deg)";
-                rotateState = 1;
-            }
+                // position
+                if ((rightVal - 120) < 0) {
+                    spr.style.right = "-20px";
+                } else {
+                    spr.style.right = (Number(rightPx) - 120) + "px";
+                }
 
-        }
-
-        // top right hover
-        else if (hoverPosX >= 75 && hoverPosY <= 25) {
-
-            // position
-            if ((rightVal+60) > leftBoxVal) {
-                spr.style.right = leftBoxVal + "px";
-            }
-
-            else {
-                spr.style.right = (Number(rightPx)+60) + "px";
+                // rotation
+                if (rotateState === 1) {
+                    spr.style.transform = "rotate(229deg)";
+                    rotateState = 0;
+                } else {
+                    spr.style.transform = "rotate(170deg)";
+                    rotateState = 1;
+                }
             }
 
-            if ((bottomVal-60) < bottomBoxVal+35) {
-                spr.style.bottom = bottomBoxVal+35 + "px";
+            // right hover
+            else if (hoverPosX >= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
+
+                // position
+                if ((rightVal + 120) > leftBoxVal) {
+                    spr.style.right = leftBoxVal + "px";
+                } else {
+                    spr.style.right = (Number(rightPx) + 120) + "px";
+                }
+
+                // rotation
+                if (rotateState === 1) {
+                    spr.style.transform = "rotate(268deg)";
+                    rotateState = 0;
+                } else {
+                    spr.style.transform = "rotate(203deg)";
+                    rotateState = 1;
+                }
             }
 
-            else {
-                spr.style.bottom = (Number(bottomPx)-60) + "px";
+            // top hover
+            else if (hoverPosY <= 50 && hoverPosX >= 25 && hoverPosX <= 75) {
+
+                // position
+                if ((bottomVal - 120) < bottomBoxVal + 35) {
+                    spr.style.bottom = bottomBoxVal + 35 + "px";
+                } else {
+                    spr.style.bottom = (Number(bottomPx) - 120) + "px";
+                }
+
+                // rotation
+                if (rotateState === 1) {
+                    spr.style.transform = "rotate(328deg)";
+                    rotateState = 0;
+                } else {
+                    spr.style.transform = "rotate(207deg)";
+                    rotateState = 1;
+                }
             }
 
-            // rotation
-            if (rotateState === 1) {
-                spr.style.transform = "rotate(143deg)";
-                rotateState = 0;
-            }
-            else {
-                spr.style.transform = "rotate(64deg)";
-                rotateState = 1;
-            }
+            // bottom hover
+            else if (hoverPosY >= 50 && hoverPosX >= 25 && hoverPosX <= 75) {
 
-        }
+                // position
+                if ((bottomVal + 120) > topBoxVal - 100) {
+                    spr.style.bottom = topBoxVal + "px";
+                } else {
+                    spr.style.bottom = (Number(bottomPx) + 120) + "px";
+                }
 
-        // top left hover
-        else if (hoverPosX <= 25 && hoverPosY <= 25) {
-
-            // position
-            if ((rightVal-60) < 0) {
-                spr.style.right = "-20px";
-            }
-
-            else {
-                spr.style.right = (Number(rightPx)-60) + "px";
+                // rotation
+                if (rotateState === 1) {
+                    spr.style.transform = "rotate(355deg)";
+                    rotateState = 0;
+                } else {
+                    spr.style.transform = "rotate(302deg)";
+                    rotateState = 1;
+                }
             }
 
-            if ((bottomVal-60) < bottomBoxVal+35) {
-                spr.style.bottom = bottomBoxVal+35 + "px";
-            }
-
-            else {
-                spr.style.bottom = (Number(bottomPx)-60) + "px";
-            }
-
-            // rotation
-            if (rotateState === 1) {
-                spr.style.transform = "rotate(196deg)";
-                rotateState = 0;
-            }
-            else {
-                spr.style.transform = "rotate(111deg)";
-                rotateState = 1;
-            }
-
-        }
-
-        // left hover
-        else if (hoverPosX <= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
-
-            // position
-            if ((rightVal-120) < 0) {
-                spr.style.right = "-20px";
-            }
-
-            else {
-                spr.style.right = (Number(rightPx)-120) + "px";
-            }
-
-            // rotation
-            if (rotateState === 1) {
-                spr.style.transform = "rotate(229deg)";
-                rotateState = 0;
-            }
-            else {
-                spr.style.transform = "rotate(170deg)";
-                rotateState = 1;
-            }
-        }
-
-        // right hover
-        else if (hoverPosX >= 50 && hoverPosY >= 25 && hoverPosY <= 75) {
-
-            // position
-            if ((rightVal+120) > leftBoxVal) {
-                spr.style.right = leftBoxVal + "px";
-            }
-
-            else {
-                spr.style.right = (Number(rightPx)+120) + "px";
-            }
-
-            // rotation
-            if (rotateState === 1) {
-                spr.style.transform = "rotate(268deg)";
-                rotateState = 0;
-            }
-            else {
-                spr.style.transform = "rotate(203deg)";
-                rotateState = 1;
-            }
-        }
-
-        // top hover
-        else if (hoverPosY <= 50 && hoverPosX >= 25 && hoverPosX <= 75) {
-
-            // position
-            if ((bottomVal-120) < bottomBoxVal+35) {
-                spr.style.bottom = bottomBoxVal+35 + "px";
-            }
-
-            else {
-                spr.style.bottom = (Number(bottomPx)-120) + "px";
-            }
-
-            // rotation
-            if (rotateState === 1) {
-                spr.style.transform = "rotate(328deg)";
-                rotateState = 0;
-            }
-            else {
-                spr.style.transform = "rotate(207deg)";
-                rotateState = 1;
-            }
-        }
-
-        // bottom hover
-        else if (hoverPosY >= 50  && hoverPosX >= 25 && hoverPosX <= 75) {
-
-            // position
-            if ((bottomVal+120) > topBoxVal-100) {
-                spr.style.bottom = topBoxVal + "px";
-            }
-
-            else {
-                spr.style.bottom = (Number(bottomPx)+120) + "px";
-            }
-
-            // rotation
-            if (rotateState === 1) {
-                spr.style.transform = "rotate(355deg)";
-                rotateState = 0;
-            }
-            else {
-                spr.style.transform = "rotate(302deg)";
-                rotateState = 1;
-            }
-        }
-
-    });
+        });
+    }
     // END MAGNETIC SPRINKLES
 
 
@@ -399,7 +362,7 @@ window.addEventListener("load", function() {
 /*
 
 to do:
-
+1. compress donut photos
 2. fix sprinkles video (top gap when resizing window smaller) and gap between sections 2 and 3, and all other responsiveness
 3. add all sprinkles
 4. change sprinkle img src (OR just resize? try both ways) & position (bottom, right) when resizing window
