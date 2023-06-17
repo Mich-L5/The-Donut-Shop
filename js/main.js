@@ -365,22 +365,30 @@ window.addEventListener("load", function() {
     // call function whenever screen is resized
     window.addEventListener("resize", adjustHomeS3);
     function adjustHomeS3() {
-        if (window.innerWidth < 1235 && window.innerWidth >= 768) {
 
-            // map values to range below
-            // 768px W = 265px , 1235px W = 1px
-            let topMarginValue = (1 - 265) * (window.innerWidth - 768) / (1235 - 768) + 265;
+        if (window.innerWidth >= 768) {
 
-            document.getElementById("section-3-home").style.marginTop = "-" + topMarginValue + "px";
+            if (window.innerWidth <= 1235) {
+                // map values to range below
+                // 768px W = 265px , 1235px W = 1px
+                let topMarginValue = (1 - 265) * (window.innerWidth - 768) / (1235 - 768) + 265;
+
+                document.getElementById("section-3-home").style.marginTop = "-" + topMarginValue + "px";
+            }
+
+            else {
+                // map values to range below
+                // 1236px W = 2px , 3000px W = 1010px
+                let topMarginValue = (1010 - 2) * (window.innerWidth - 1236) / (3000 - 1236) + 2;
+
+                document.getElementById("section-3-home").style.marginTop = topMarginValue + "px";
+            }
 
         }
-        else if (window.innerWidth < 768) {
+        else {
             document.getElementById("section-3-home").style.marginTop = "-265px";
         }
 
-        else {
-            document.getElementById("section-3-home").style.marginTop = "0px";
-        }
     }
 
     // END ADJUST HOME SECTION 3 TOP MARGIN
