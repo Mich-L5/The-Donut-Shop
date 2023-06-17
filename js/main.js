@@ -404,11 +404,17 @@ window.addEventListener("load", function() {
 
         if (window.innerWidth <= 1920) {
 
-            // map values to range below
-            // 1920px W = -930px , 768px W = -580px
-            let topMarginValue = ((-580) - (-930)) * (window.innerWidth - 1920) / (768 - 1920) + (-930);
+            if (window.innerWidth >= 768) {
+                // map values to range below
+                // 1920px W = -930px , 768px W = -580px
+                let topMarginValue = ((-580) - (-930)) * (window.innerWidth - 1920) / (768 - 1920) + (-930);
 
-            document.getElementById("section2-content").style.marginTop = topMarginValue + "px";
+                document.getElementById("section2-content").style.marginTop = topMarginValue + "px";
+
+            }
+            else {
+                document.getElementById("section2-content").style.marginTop = "-580px";
+            }
 
         }
 

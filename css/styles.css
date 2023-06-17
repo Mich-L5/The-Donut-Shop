@@ -536,6 +536,34 @@ p, button {
 
 }
 
+@media screen and (max-width: 475px)  {
+
+    #section2-content {
+        padding-right: 0px;
+        align-items: center;
+    }
+
+    #title {
+        text-align: center;
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    #s2-p {
+        text-align: center;
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    #section-2-home button {
+        font-size: 22px;
+        padding: 7px 33px;
+        margin-top: 27px;
+    }
+
+
+}
+
 @media screen and (max-width: 465px)  {
 
     #masthead-logo-mobile {
@@ -563,6 +591,25 @@ p, button {
     }
 
 }
+
+@media screen and (max-width: 345px)  {
+    #title {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    #s2-p {
+        font-size: 20px;
+        line-height: 29px;
+        width: 250px;
+    }
+
+    #section-2-home button {
+        font-size: 20px;
+    }
+}
+
+
 
 @media screen and (max-width: 345px)  {
 
