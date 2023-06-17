@@ -393,6 +393,27 @@ window.addEventListener("load", function() {
 
     // END ADJUST HOME SECTION 3 TOP MARGIN
 
+    // ADJUST SECTION 2 HOME CONTENT
+
+    // call function on load
+    adjustHomeS2();
+
+    // call function whenever screen is resized
+    window.addEventListener("resize", adjustHomeS2);
+    function adjustHomeS2() {
+
+        if (window.innerWidth <= 1920) {
+
+            // map values to range below
+            // 1920px W = -930px , 768px W = -580px
+            let topMarginValue = ((-580) - (-930)) * (window.innerWidth - 1920) / (768 - 1920) + (-930);
+
+            document.getElementById("section2-content").style.marginTop = topMarginValue + "px";
+
+        }
+
+    }
+
 
 /*
 
