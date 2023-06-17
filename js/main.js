@@ -357,13 +357,39 @@ window.addEventListener("load", function() {
     // END MAGNETIC SPRINKLES
 
 
+    // ADJUST HOME SECTION 3 TOP MARGIN
+
+    // call function on load
+    adjustHomeS3();
+
+    // call function whenever screen is resized
+    window.addEventListener("resize", adjustHomeS3);
+    function adjustHomeS3() {
+        if (window.innerWidth < 1235 && window.innerWidth >= 768) {
+
+            // map values to range below
+            // 768px W = 265px , 1235px W = 1px
+            let topMarginValue = (1 - 265) * (window.innerWidth - 768) / (1235 - 768) + 265;
+
+            document.getElementById("section-3-home").style.marginTop = "-" + topMarginValue + "px";
+
+        }
+        else if (window.innerWidth < 768) {
+            document.getElementById("section-3-home").style.marginTop = "-265px";
+        }
+
+        else {
+            document.getElementById("section-3-home").style.marginTop = "0px";
+        }
+    }
+
+    // END ADJUST HOME SECTION 3 TOP MARGIN
 
 
 /*
 
 to do:
-1. compress donut photos
-2. fix sprinkles video (top gap when resizing window smaller) and gap between sections 2 and 3, and all other responsiveness
+2.  all other responsiveness
 3. add all sprinkles
 4. change sprinkle img src (OR just resize? try both ways) & position (bottom, right) when resizing window
 
