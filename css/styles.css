@@ -217,6 +217,7 @@ p, button {
     z-index: 9;
 }
 
+/* white */
 #sprinkle-1 {
     bottom: 0px;
     right: 40px;
@@ -248,7 +249,7 @@ p, button {
 
 #sprinkle-6 {
     bottom: 500px;
-    right: 270px;
+    right: 770px;
     transform: rotate(250deg);
 }
 
@@ -264,6 +265,7 @@ p, button {
     transform: rotate(186deg);
 }
 
+/* orange */
 #sprinkle-9 {
     bottom: 240px;
     right: 0px;
@@ -272,7 +274,7 @@ p, button {
 
 #sprinkle-10 {
     bottom: 310px;
-    right: 30px;
+    right: 630px;
     transform: rotate(59deg);
 }
 
@@ -282,6 +284,7 @@ p, button {
     transform: rotate(136deg);
 }
 
+/* red */
 #sprinkle-12 {
     bottom: 100px;
     right: 390px;
@@ -296,15 +299,112 @@ p, button {
 
 #sprinkle-14 {
     bottom: -170px;
-    right: 110px;
+    right: 610px;
     transform: rotate(145deg);
 }
 
 #sprinkle-15 {
     bottom: -100px;
-    right: 160px;
+    right: 560px;
     transform: rotate(299deg);
 }
+
+/* blue */
+#sprinkle-16 {
+    bottom: 530px;
+    right: 700px;
+    transform: rotate(59deg);
+}
+
+
+#sprinkle-17 {
+    bottom: 55px;
+    right: 420px;
+    transform: rotate(129deg);
+}
+
+
+#sprinkle-18 {
+    bottom: 322px;
+    right: 520px;
+    transform: rotate(342deg);
+}
+
+
+#sprinkle-19 {
+    bottom: 530px;
+    right: 100px;
+    transform: rotate(28deg);
+}
+
+/* yellow */
+#sprinkle-20 {
+    bottom: 560px;
+    right: 800px;
+    transform: rotate(348deg);
+}
+
+#sprinkle-21 {
+    bottom: 250px;
+    right: 760px;
+    transform: rotate(264deg);
+}
+
+#sprinkle-22 {
+    bottom: 10px;
+    right: 300px;
+    transform: rotate(90deg);
+}
+
+#sprinkle-23 {
+    bottom: -230px;
+    right: 460px;
+    transform: rotate(0deg);
+}
+
+#sprinkle-24 {
+    bottom: -50px;
+    right: 660px;
+    transform: rotate(34deg);
+}
+
+#sprinkle-25 {
+    bottom: 550px;
+    right: 460px;
+    transform: rotate(184deg);
+}
+
+#sprinkle-26 {
+    bottom: 230px;
+    right: 560px;
+    transform: rotate(233deg);
+}
+
+/* green */
+#sprinkle-27 {
+    bottom: 490px;
+    right: 660px;
+    transform: rotate(233deg);
+}
+
+#sprinkle-28 {
+    bottom: 330px;
+    right: 430px;
+    transform: rotate(233deg);
+}
+
+#sprinkle-29 {
+    bottom: 60px;
+    right: 760px;
+    transform: rotate(233deg);
+}
+
+#sprinkle-30 {
+    bottom: 530px;
+    right: 150px;
+    transform: rotate(133deg);
+}
+
 
 /* END SPRINKLES */
 
@@ -340,6 +440,22 @@ p, button {
         font-size: 47px;
         margin-top: 120px;
     }
+
+    #sprinkle-5 {
+        bottom: -250px;
+    }
+}
+
+@media screen and (max-width: 1730px)  {
+
+    #sprinkle-4 {
+        right: 700px;
+    }
+
+    #sprinkle-29 {
+        right: 660px;
+    }
+
 }
 
 @media screen and (max-width: 1700px)  {
@@ -348,6 +464,41 @@ p, button {
       width: 1200px;
   }
 
+}
+
+@media screen and (max-width: 1670px)  {
+
+    #sprinkle-13 {
+        bottom: -180px;
+    }
+
+}
+
+@media screen and (max-width: 1590px)  {
+
+    #sprinkle-5 {
+        bottom: -150px;
+    }
+
+    #sprinkle-21 {
+        right: 660px;
+    }
+
+    #sprinkle-23 {
+        bottom: -130px;
+    }
+
+    #sprinkle-13 {
+        bottom: -80px;
+    }
+
+    #sprinkle-29 {
+        right: 560px;
+    }
+
+    .home-sprinkle {
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 1550px)  {
@@ -395,6 +546,73 @@ p, button {
 }
 
 
+@media screen and (max-width: 1450px) {
+
+    #sprinkle-14 {
+        bottom: -10px;
+        right: 510px;
+    }
+
+    #sprinkle-5 {
+        bottom: 70px;
+        right: 40px;
+    }
+
+    #sprinkle-4 {
+        right: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1380px)  {
+
+    #sprinkle-13 {
+        bottom: 180px;
+        right: 120px;
+    }
+
+    #sprinkle-23 {
+        bottom: 230px;
+        right: 250px;
+    }
+
+    #sprinkle-21 {
+        bottom: 270px;
+        right: 360px;
+    }
+
+    #sprinkle-10 {
+        right: 50px;
+    }
+
+    #sprinkle-27 {
+        right: 460px;
+    }
+
+    #sprinkle-16 {
+        right: 600px;
+    }
+
+    #sprinkle-6 {
+        bottom: 400px;
+        right: 550px;
+    }
+
+    #sprinkle-20 {
+        right: 640px;
+    }
+
+    #sprinkle-15 {
+        bottom: 500px;
+        right: 260px;
+    }
+
+    #sprinkle-14 {
+        bottom: 560px;
+        right: -30px;
+    }
+}
+
 @media screen and (max-width: 1300px)  {
     #title {
         font-size: 65px;
@@ -412,12 +630,73 @@ p, button {
 
 }
 
+
+@media screen and (max-width: 1250px) {
+    #sprinkle-24 {
+        bottom: 350px;
+        right: 230px;
+    }
+
+    #sprinkle-2 {
+        bottom: 120px;
+        right: 280px;
+    }
+
+    #sprinkle-29 {
+        bottom: 580px;
+        right: 200px;
+    }
+
+    #sprinkle-1 {
+        bottom: 300px;
+        right: 80px;
+    }
+
+    #sprinkle-22 {
+        bottom: 410px;
+        right: 200px;
+    }
+
+    #sprinkle-6 {
+        bottom: 590px;
+        right: 370px;
+    }
+
+    .home-sprinkle
+    {
+        width: 90px;
+    }
+}
+
 @media screen and (max-width: 1150px)  {
 
     #section-2-home button {
         margin-top: 50px;
     }
 
+    #sprinkle-16 {
+        bottom: 530px;
+        right: 400px;
+    }
+
+    #sprinkle-20 {
+        bottom: 580px;
+        right: 550px;
+    }
+
+    #sprinkle-3 {
+        bottom: 300px;
+        right: 170px;
+    }
+
+    #sprinkle-18 {
+        right: 200px;
+    }
+
+    #sprinkle-17 {
+        right: 200px;
+        bottom: 250px;
+    }
 
 }
 
@@ -447,6 +726,20 @@ p, button {
         padding-right: 40px;
     }
 
+    .home-sprinkle
+    {
+        width: 80px;
+    }
+
+}
+
+@media screen and (max-width: 1050px)  {
+
+    #sprinkle-5 {
+        bottom: 340px;
+        right: 20px;
+    }
+
 }
 
 @media screen and (max-width: 1000px)  {
@@ -457,6 +750,17 @@ p, button {
 
     #donut-container {
         margin-top: 30px;
+    }
+
+    .home-sprinkle {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 980px)  {
+    #sprinkle-12 {
+        bottom: 250px;
+        right: 320px;
     }
 }
 
@@ -478,6 +782,12 @@ p, button {
         font-size: 21px;
         width: 400px;
     }
+
+
+    #sprinkle-2 {
+        bottom: 430px;
+        right: 40px;
+    }
 }
 
 @media screen and (max-width: 920px)  {
@@ -495,6 +805,37 @@ p, button {
         font-size: 20px;
         width: 320px;
     }
+
+    #sprinkle-28 {
+        right: 330px;
+    }
+
+    #sprinkle-27 {
+        right: 260px;
+    }
+
+    .home-sprinkle {
+        width: 60px;
+    }
+
+}
+
+@media screen and (max-width: 850px)  {
+
+    #sprinkle-13 {
+        bottom: 250px;
+    }
+
+    #sprinkle-4 {
+        bottom: 320px;
+        right: 280px;
+    }
+
+    #sprinkle-7 {
+        bottom: 380px;
+        right: 230px;
+    }
+
 }
 
 @media screen and (max-width: 830px)  {
@@ -505,6 +846,10 @@ p, button {
 
     #donut-container {
         margin-top: 40px;
+    }
+
+    .home-sprinkle {
+        width: 60px;
     }
 
 }
