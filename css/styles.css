@@ -206,18 +206,108 @@ p, button {
     pointer-events: none;
 }
 
+/* SPRINKLES */
 
 .home-sprinkle {
-    width: 100px;
+    width: 120px;
     height: auto;
     transition: all ease 0.5s;
     transform: rotate(0deg);
     position: absolute;
     z-index: 9;
+}
+
+#sprinkle-1 {
     bottom: 0px;
     right: 40px;
-    background-color: greenyellow;
 }
+
+#sprinkle-2 {
+    bottom: -30px;
+    right: 300px;
+    transform: rotate(20deg);
+}
+
+#sprinkle-3 {
+    bottom: 30px;
+    right: 400px;
+    transform: rotate(50deg);
+}
+
+#sprinkle-4 {
+    bottom: 200px;
+    right: 800px;
+    transform: rotate(2deg);
+}
+
+#sprinkle-5 {
+    bottom: -350px;
+    right: 220px;
+    transform: rotate(160deg);
+}
+
+#sprinkle-6 {
+    bottom: 500px;
+    right: 270px;
+    transform: rotate(250deg);
+}
+
+#sprinkle-7 {
+    bottom: 420px;
+    right: 370px;
+    transform: rotate(320deg);
+}
+
+#sprinkle-8 {
+    bottom: 370px;
+    right: 290px;
+    transform: rotate(186deg);
+}
+
+#sprinkle-9 {
+    bottom: 240px;
+    right: 0px;
+    transform: rotate(220deg);
+}
+
+#sprinkle-10 {
+    bottom: 310px;
+    right: 30px;
+    transform: rotate(59deg);
+}
+
+#sprinkle-11 {
+    bottom: 460px;
+    right: 230px;
+    transform: rotate(136deg);
+}
+
+#sprinkle-12 {
+    bottom: 100px;
+    right: 390px;
+    transform: rotate(111deg);
+}
+
+#sprinkle-13 {
+    bottom: -280px;
+    right: 420px;
+    transform: rotate(83deg);
+}
+
+#sprinkle-14 {
+    bottom: -170px;
+    right: 110px;
+    transform: rotate(145deg);
+}
+
+#sprinkle-15 {
+    bottom: -100px;
+    right: 160px;
+    transform: rotate(299deg);
+}
+
+/* END SPRINKLES */
+
 
 
 
@@ -587,9 +677,7 @@ p, button {
 
     #masthead-logo-mobile {
         width: 340px;
-
     }
-
 }
 
 @media screen and (max-width: 345px)  {
