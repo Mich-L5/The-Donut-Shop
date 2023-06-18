@@ -426,18 +426,16 @@ window.addEventListener("load", function() {
             }
 
         }
-
     }
 
 
-/*
+    // Remove all previous JS styling on sprinkles when resizing window
 
-to do:
-3. add all sprinkles
-4. change sprinkle img src (OR just resize? try both ways) & position (bottom, right) when resizing window
-
-
- */
+    window.addEventListener("resize", function() {
+        for (let i = 0; i < homeSprinkles.length; i++) {
+            homeSprinkles[i].removeAttribute("style");
+        }
+    });
 
 
 
