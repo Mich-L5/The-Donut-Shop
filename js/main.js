@@ -1,5 +1,29 @@
 window.addEventListener("load", function() {
 
+    // CUSTOM SCROLLBAR
+
+    window.addEventListener("scroll", scrollbar);
+
+    var docHeight = document.body.scrollHeight - (window.innerHeight * 1.5);
+
+    function scrollbar() {
+
+        let percentage = (window.scrollY/docHeight) * 100;
+
+        // prevent the donut from going all the way to the bottom
+        if (percentage > 97) {
+            percentage = 97;
+        }
+
+        document.getElementById("scrollbar-thumb").style.top = (percentage) + "%";
+
+        console.log(percentage);
+    }
+
+
+
+    // END CUSTOM SCROLLBAR
+
     // SPRINKLES VIDEO DISAPPEAR (ONCE SCROLLED PASSED)
     window.addEventListener("scroll", function() {
         if (window.scrollY > 650) {

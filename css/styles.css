@@ -14,6 +14,39 @@ html, body {
     overflow-x: hidden;
 }
 
+
+/* custom scrollbar */
+
+/* Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* all other browsers */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollbar-thumb {
+    width: 25px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+
+#thumb-container {
+    background-color: greenyellow;
+    height: 100vh;
+    background-color: rgba(145, 226, 232, 0.55);
+    width: 12px;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+}
+
+/* end custom scrollbar */
+
 h1, h2 {
     font-family: shapiro-air;
     font-weight: 300;
