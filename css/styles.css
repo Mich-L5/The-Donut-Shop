@@ -211,7 +211,8 @@ p, button {
     line-height: 70px;
 }
 
-#section-2-home button {
+#section-2-home button,
+#section-3-home button{
     background-image: linear-gradient(to right, #a9e2e6, #f6c4e9);
     padding: 12px 70px;
     font-size: 55px;
@@ -222,7 +223,8 @@ p, button {
     transition: 0.5s ease all;
 }
 
-#section-2-home button:hover {
+#section-2-home button:hover,
+#section-3-home button:hover {
     background-image: linear-gradient(to right, #f6c4e9, #f6c4e9);
     border: 1px rgba(241, 150, 217, 0.99) solid;
     cursor: pointer;
@@ -432,8 +434,17 @@ p, button {
 
 /*** HOME SECTION 3 ***/
 #section-3-home {
-    background-color: orange;
-    height: 1500px;
+    background-color: white;
+    background-image: url("../img/glam-donut-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+/*** HOME SECTION 4 ***/
+#section-4-home {
+    background-color: white;
+    height: 800px;
 }
 
 
