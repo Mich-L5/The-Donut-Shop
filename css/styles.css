@@ -79,7 +79,7 @@ p, button {
 }
 
 #masthead-logo {
-    width: 1350px;
+    width: 1100px;
     height: auto;
     margin: 50px 0 -40px 0;
 }
@@ -472,7 +472,7 @@ p, button {
 @media screen and (max-width: 1700px)  {
 
   #masthead-logo {
-      width: 1200px;
+      width: 1000px;
   }
 }
 
@@ -527,13 +527,6 @@ p, button {
 
     .home-sprinkle {
         width: 100px;
-    }
-}
-
-@media screen and (max-width: 1550px)  {
-
-    #masthead-logo {
-        width: 1000px;
     }
 }
 
