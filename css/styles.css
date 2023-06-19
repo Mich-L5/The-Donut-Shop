@@ -28,15 +28,15 @@ html {
 }
 
 #scrollbar-thumb {
-    width: 25px;
+    width: 30px;
     height: auto;
     position: absolute;
     right: 0;
     z-index: 1000;
+    filter: drop-shadow(1px 1px 1px rgba(14, 14, 14, 0.37));
 }
 
 #thumb-container {
-    background-color: greenyellow;
     height: 100vh;
     background-color: rgba(145, 226, 232, 0.55);
     width: 12px;

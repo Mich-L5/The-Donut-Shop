@@ -2,22 +2,21 @@ window.addEventListener("load", function() {
 
     // CUSTOM SCROLLBAR
 
+    var docHeight = document.body.scrollHeight - window.innerHeight;
     window.addEventListener("scroll", scrollbar);
-
-    var docHeight = document.body.scrollHeight - (window.innerHeight * 1.5);
+    window.addEventListener("resize", scrollbar);
 
     function scrollbar() {
+        docHeight = document.body.scrollHeight - window.innerHeight;
 
         let percentage = (window.scrollY/docHeight) * 100;
 
-        // prevent the donut from going all the way to the bottom
-        if (percentage > 97) {
-            percentage = 97;
+        if (percentage > 96) {
+            percentage = 96
         }
 
         document.getElementById("scrollbar-thumb").style.top = (percentage) + "%";
 
-        console.log(percentage);
     }
 
 
