@@ -1128,6 +1128,16 @@ p, button {
     #section-3-home > div > div > p:nth-child(2) {
         margin-left: -18px;
     }
+
+    #section-3-home > div img {
+        margin-left: -270px;
+        margin-bottom: 150px;
+        height: 120px;
+    }
+
+    #section-3-home > div:nth-child(2) {
+        margin-bottom: 70px;
+    }
 }
 
 @media screen and (max-width: 465px)  {
@@ -1138,6 +1148,20 @@ p, button {
     }
 }
 
+@media screen and (max-width: 445px)  {
+
+    #section-3-home > div img {
+        margin-left: -240px;
+    }
+}
+
+@media screen and (max-width: 420px)  {
+
+    #section-3-home > div img {
+        margin-left: -220px;
+    }
+}
+
 @media screen and (max-width: 410px)  {
 
     #masthead-logo-mobile {
@@ -1145,10 +1169,58 @@ p, button {
     }
 }
 
+@media screen and (max-width: 400px)  {
+
+    #section-3-home h2 {
+        width: 300px;
+        line-height: 50px;
+    }
+
+    #section-3-home {
+        background-position-y: 55px;
+    }
+
+    #section-3-home > div > div > p:nth-child(1) {
+        margin-right: 0;
+    }
+
+    #section-3-home > div > div > p:nth-child(2) {
+        margin-left: 0;
+    }
+
+    #section-3-home > div > div:nth-child(2) {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 385px)  {
+
+    #section-3-home > div img {
+        margin-left: -200px;
+        margin-bottom: 130px;
+    }
+
+    #section-3-home {
+        background-position-x: -170px;
+    }
+}
+
 @media screen and (max-width: 375px)  {
 
     #masthead-logo-mobile {
         width: 340px;
+    }
+}
+
+@media screen and (max-width: 365px)  {
+
+    #section-3-home > div img {
+        margin-left: -190px;
+    }
+
+    #section-3-home {
+        background-position-x: -185px;
+        background-positiony: 40px;
     }
 }
 
@@ -1171,6 +1243,11 @@ p, button {
 
     .blue-pink-btn {
         font-size: 20px;
+    }
+
+    #section-3-home > div img {
+        margin-left: -170px;
+        margin-bottom: 145px;
     }
 }
 
