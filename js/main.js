@@ -485,13 +485,14 @@ window.addEventListener("load", function() {
     // Remove all previous JS styling on sprinkles when resizing window
 
     window.addEventListener("resize", function() {
-        for (let i = 0; i < homeSprinkles.length; i++) {
-            homeSprinkles[i].removeAttribute("style");
+        if (window.innerWidth >= 768) {
+            for (let i = 0; i < homeSprinkles.length; i++) {
+                homeSprinkles[i].removeAttribute("style");
+            }
         }
     });
 });
 
 // to do:
-// readjust section 2 responsiveness (content stuff) , change to general h2 selector so that it applies to other pages too
 // make sure top content appears ok on load (maybe display none on titles for 1 sec timer)
 // make sure button text is black (not blue) on mobile - probably change the a {} for links in CSS

@@ -55,6 +55,10 @@ h1, h2 {
     font-weight: 300;
 }
 
+a {
+    color: black;
+}
+
 p, button {
     font-family: halibut-serif-thin;
 }
@@ -447,13 +451,50 @@ p, button {
     background-image: url("../img/glam-donut-bg.jpg");
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section-3-home > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px 0 10px;
+}
+
+/* to disable the full height stretching of the flexbox property */
+.btn-reg-height {
+    align-self: center;
+}
+
+#section-3-home div > img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+#section-3-home > div > div > p:nth-child(1) {
+    margin-top: 50px;
+}
+
+#section-3-home > div > div > p:nth-child(2) {
+    margin-top: -20px;
+}
+
+#section-3-home > div > div > p {
+    text-align: right;
+}
+
+#section-3-home button {
+    margin-bottom: -25px;
 }
 
 /*** HOME SECTION 4 ***/
 #section-4-home {
     background-color: white;
-    height: 800px;
+    height: 1600px;
 }
 
 
@@ -482,6 +523,10 @@ p, button {
   #masthead-logo {
       width: 1000px;
   }
+
+    #section-3-home {
+        height: 1100px;
+    }
 }
 
 @media screen and (max-width: 1670px)  {
@@ -518,6 +563,13 @@ p, button {
 
 }
 
+@media screen and (max-width: 1620px)  {
+
+    #section-3-home {
+        height: 1000px;
+    }
+}
+
 @media screen and (max-width: 1590px)  {
 
     #sprinkle-5 {
@@ -545,6 +597,17 @@ p, button {
     }
 }
 
+@media screen and (max-width: 1500px)  {
+
+    #section-3-home {
+        height: 900px;
+    }
+
+    #section-3-home h2 {
+        width: 500px;
+    }
+}
+
 @media screen and (max-width: 1450px) {
 
     #sprinkle-14 {
@@ -559,6 +622,13 @@ p, button {
 
     #sprinkle-4 {
         right: 300px;
+    }
+}
+
+@media screen and (max-width: 1400px)  {
+
+    #section-3-home {
+        height: 800px;
     }
 }
 
@@ -609,6 +679,14 @@ p, button {
         bottom: 560px;
         right: -30px;
     }
+
+    #section-3-home div > img {
+        height: 80px;
+    }
+
+    #section-3-home button {
+        margin-bottom: -10px;
+    }
 }
 
 
@@ -646,6 +724,10 @@ p, button {
 
     .home-sprinkle {
         width: 90px;
+    }
+
+    #section-3-home {
+        height: 700px;
     }
 }
 
@@ -722,6 +804,10 @@ p, button {
     #sprinkle-5 {
         bottom: 340px;
         right: 20px;
+    }
+
+    #section-3-home {
+        height: 600px;
     }
 }
 
@@ -814,6 +900,13 @@ p, button {
     }
 }
 
+@media screen and (max-width: 875px)  {
+
+    #section-3-home {
+        height: 500px;
+    }
+}
+
 @media screen and (max-width: 850px)  {
 
     #sprinkle-13 {
@@ -903,6 +996,10 @@ p, button {
     #sprinkles-video {
         margin-bottom: 100px;
     }
+
+    #section-3-home > div > div > p {
+        width: 205px;
+    }
 }
 
 @media screen and (max-width: 665px)  {
@@ -952,6 +1049,13 @@ p, button {
     }
 }
 
+@media screen and (max-width: 530px)  {
+
+    #section-3-home {
+        height: 450px;
+    }
+}
+
 @media screen and (max-width: 515px)  {
 
     #masthead-logo-mobile {
@@ -986,6 +1090,43 @@ p, button {
 
     #section-2-home button {
         margin-top: 27px;
+    }
+
+    #section-3-home {
+        height: 650px;
+        background-position: left;
+        background-position-x: -150px;
+        background-position-y: 20px;
+    }
+
+    #section-3-home > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #section-3-home > div > div:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #section-3-home > div > div > p:nth-child(1),
+    #section-3-home > div > div > p:nth-child(2) {
+        text-align: center;
+        margin-top: -30px;
+        font-size: 18px;
+    }
+
+    #section-3-home > div > div > p:nth-child(1) {
+        margin-right: -18px;
+    }
+
+    #section-3-home > div > div > p:nth-child(2) {
+        margin-left: -18px;
     }
 }
 
