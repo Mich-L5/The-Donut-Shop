@@ -35,7 +35,7 @@ window.addEventListener("load", function() {
         document.getElementById("thumb-container").style.opacity = 1;
 
         // timeout to fade scrollbar back out
-        fadeOut = setTimeout(scrollbarFadeOut, 1500);
+        fadeOut = setTimeout(scrollbarFadeOut, 1000);
     }
 
     function scrollbarFadeOut() {
@@ -139,6 +139,8 @@ window.addEventListener("load", function() {
     /*             (DESKTOP ONLY)              */
     /* --------------------------------------- */
 
+    var homeSprinkles;
+
     if (window.innerWidth > 768) {
 
         // set rotation state to toggle between two states
@@ -176,7 +178,7 @@ window.addEventListener("load", function() {
         });
 
         // event listener for mouseover the sprinkles
-        var homeSprinkles = document.querySelectorAll(".home-sprinkle");
+        homeSprinkles = document.querySelectorAll(".home-sprinkle");
 
         for (let i = 0; i < homeSprinkles.length; i++) {
 
@@ -483,9 +485,8 @@ window.addEventListener("load", function() {
     }
 
     // Remove all previous JS styling on sprinkles when resizing window
-
     window.addEventListener("resize", function() {
-        if (window.innerWidth >= 768) {
+        if (window.innerWidth > 768) {
             for (let i = 0; i < homeSprinkles.length; i++) {
                 homeSprinkles[i].removeAttribute("style");
             }
