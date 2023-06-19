@@ -464,4 +464,7 @@ window.addEventListener("load", function() {
 
 });
 
+// make scrollbar thinner on mobile
+// make scrollbar fade in/out
+
 

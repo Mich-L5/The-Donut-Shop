@@ -33,16 +33,18 @@ html {
     position: absolute;
     right: 0;
     z-index: 1000;
-    filter: drop-shadow(1px 1px 1px rgba(14, 14, 14, 0.37));
+    filter: drop-shadow(1px 1px 1px rgba(14, 14, 14, 0.42));
 }
 
 #thumb-container {
     height: 100vh;
-    background-color: rgba(145, 226, 232, 0.55);
-    width: 12px;
+    background-color: rgba(87, 226, 239, 0.25);
+    width: 29px;
     position: fixed;
     right: 0;
     z-index: 999;
+    border-radius: 15px;
+    border: 0.5px solid #42b5be;
 }
 
 /* end custom scrollbar */
