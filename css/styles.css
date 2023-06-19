@@ -1,3 +1,4 @@
+/*** FONTS ***/
 @font-face {
     font-family: shapiro-air;
     src: url("../font/shapiro-air.otf");
@@ -8,15 +9,14 @@
     src: url("../font/halibut-serif-thin.woff");
 }
 
+/*** GENERAL ***/
 html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-
-/* custom scrollbar */
-
+/*** CUSTOM SCROLLBAR ***/
 /* Firefox */
 html {
     scrollbar-width: none;
@@ -49,10 +49,7 @@ html {
     transition: 0.5s ease all;
 }
 
-
-
-/* end custom scrollbar */
-
+/*** GENERAL TEXT ***/
 h1, h2 {
     font-family: shapiro-air;
     font-weight: 300;
@@ -62,8 +59,7 @@ p, button {
     font-family: halibut-serif-thin;
 }
 
-
-
+/*** HOME SECTION 1 ***/
 #section-1-home {
     display: flex;
     justify-content: center;
@@ -72,7 +68,6 @@ p, button {
     position: relative;
     z-index: -1;
 }
-
 
 #sprinkles-video {
     width: 100%;
@@ -87,8 +82,6 @@ p, button {
     width: 1350px;
     height: auto;
     margin: 50px 0 -40px 0;
-
-
 }
 
 #masthead-logo-mobile {
@@ -109,7 +102,6 @@ p, button {
     width: auto;
     height: 200px;
     margin: -65px -30px 0 -30px;
-
 }
 
 .masthead-donut-row {
@@ -178,14 +170,12 @@ p, button {
 }
 /* end donut margins */
 
-
-
+/*** HOME SECTION 2 ***/
 #section-2-home {
     z-index: 3;
     margin-top: -100px;
     position: relative;
     height: 675px;
-
 }
 
 #donuts-video {
@@ -207,7 +197,6 @@ p, button {
     justify-content: center;
     height: 100%;
     position: relative;
-
 }
 
 #title {
@@ -245,8 +234,7 @@ p, button {
     pointer-events: none;
 }
 
-/* SPRINKLES */
-
+/* sprinkles */
 .home-sprinkle {
     width: 120px;
     height: auto;
@@ -355,20 +343,17 @@ p, button {
     transform: rotate(59deg);
 }
 
-
 #sprinkle-17 {
     bottom: 55px;
     right: 420px;
     transform: rotate(129deg);
 }
 
-
 #sprinkle-18 {
     bottom: 322px;
     right: 520px;
     transform: rotate(342deg);
 }
-
 
 #sprinkle-19 {
     bottom: 530px;
@@ -443,27 +428,19 @@ p, button {
     right: 150px;
     transform: rotate(133deg);
 }
+/* end sprinkles */
 
-
-/* END SPRINKLES */
-
-
-
-
-
-
+/*** HOME SECTION 3 ***/
 #section-3-home {
     background-color: orange;
     height: 1500px;
-
-
 }
 
 
-/* MEDIA QUERIES */
-
+/********** MEDIA QUERIES **********/
 
 @media screen and (max-width: 1800px) {
+
     #title {
         font-size: 80px;
     }
@@ -494,7 +471,6 @@ p, button {
     #sprinkle-29 {
         right: 660px;
     }
-
 }
 
 @media screen and (max-width: 1700px)  {
@@ -502,7 +478,6 @@ p, button {
   #masthead-logo {
       width: 1200px;
   }
-
 }
 
 @media screen and (max-width: 1670px)  {
@@ -510,7 +485,6 @@ p, button {
     #sprinkle-13 {
         bottom: -180px;
     }
-
 }
 
 @media screen and (max-width: 1590px)  {
@@ -561,10 +535,10 @@ p, button {
         font-size: 35px;
         margin-top: 150px;
     }
-
 }
 
 @media screen and (max-width: 1550px) {
+
     #title {
         width: 600px;
         font-size: 85px;
@@ -584,7 +558,6 @@ p, button {
     }
 }
 
-
 @media screen and (max-width: 1450px) {
 
     #sprinkle-14 {
@@ -600,7 +573,6 @@ p, button {
     #sprinkle-4 {
         right: 300px;
     }
-
 }
 
 @media screen and (max-width: 1380px)  {
@@ -653,6 +625,7 @@ p, button {
 }
 
 @media screen and (max-width: 1300px)  {
+
     #title {
         font-size: 65px;
         line-height: 70px;
@@ -666,11 +639,10 @@ p, button {
         width: 500px;
         font-size: 25px;
     }
-
 }
 
-
 @media screen and (max-width: 1250px) {
+
     #sprinkle-24 {
         bottom: 350px;
         right: 230px;
@@ -701,8 +673,7 @@ p, button {
         right: 370px;
     }
 
-    .home-sprinkle
-    {
+    .home-sprinkle {
         width: 90px;
     }
 }
@@ -736,9 +707,7 @@ p, button {
         right: 200px;
         bottom: 250px;
     }
-
 }
-
 
 @media screen and (max-width: 1100px)  {
 
@@ -765,11 +734,9 @@ p, button {
         padding-right: 40px;
     }
 
-    .home-sprinkle
-    {
+    .home-sprinkle {
         width: 80px;
     }
-
 }
 
 @media screen and (max-width: 1050px)  {
@@ -778,7 +745,6 @@ p, button {
         bottom: 340px;
         right: 20px;
     }
-
 }
 
 @media screen and (max-width: 1000px)  {
@@ -797,6 +763,7 @@ p, button {
 }
 
 @media screen and (max-width: 980px)  {
+
     #sprinkle-12 {
         bottom: 250px;
         right: 320px;
@@ -822,7 +789,6 @@ p, button {
         width: 400px;
     }
 
-
     #sprinkle-2 {
         bottom: 430px;
         right: 40px;
@@ -830,6 +796,7 @@ p, button {
 }
 
 @media screen and (max-width: 920px)  {
+
     #title {
         font-size: 45px;
         line-height: 50px;
@@ -856,7 +823,6 @@ p, button {
     .home-sprinkle {
         width: 60px;
     }
-
 }
 
 @media screen and (max-width: 850px)  {
@@ -874,7 +840,6 @@ p, button {
         bottom: 380px;
         right: 230px;
     }
-
 }
 
 @media screen and (max-width: 830px)  {
@@ -890,7 +855,6 @@ p, button {
     .home-sprinkle {
         width: 60px;
     }
-
 }
 
 @media screen and (max-width: 800px)  {
@@ -910,13 +874,7 @@ p, button {
         font-size: 18px;
         width: 300px;
     }
-
-
-
 }
-
-
-
 
 @media screen and (max-width: 768px)  {
 
@@ -937,9 +895,6 @@ p, button {
         background-position: right;
         background-size: cover;
     }
-
-
-
 }
 
 @media screen and (max-width: 730px)  {
@@ -955,7 +910,6 @@ p, button {
     #sprinkles-video {
         margin-bottom: 100px;
     }
-
 }
 
 @media screen and (max-width: 665px)  {
@@ -967,7 +921,6 @@ p, button {
     #donut-container {
         margin-top: 50px;
     }
-
 }
 
 
@@ -980,7 +933,6 @@ p, button {
     #donut-container {
         margin-top: 55px;
     }
-
 }
 
 @media screen and (max-width: 565px)  {
@@ -991,7 +943,6 @@ p, button {
 
     #masthead-logo-mobile {
         display: block;
-
     }
 
     #sprinkles-video {
@@ -1006,19 +957,14 @@ p, button {
     #thumb-container {
         width: 19px;
     }
-
-
 }
 
 @media screen and (max-width: 515px)  {
 
     #masthead-logo-mobile {
         width: 450px;
-
     }
-
 }
-
 
 @media screen and (max-width: 475px)  {
 
@@ -1044,8 +990,6 @@ p, button {
         padding: 7px 33px;
         margin-top: 27px;
     }
-
-
 }
 
 @media screen and (max-width: 465px)  {
@@ -1053,18 +997,14 @@ p, button {
     #masthead-logo-mobile {
         width: 400px;
         margin-bottom: 20px;
-
     }
-
 }
 
 @media screen and (max-width: 410px)  {
 
     #masthead-logo-mobile {
         width: 370px;
-
     }
-
 }
 
 @media screen and (max-width: 375px)  {
@@ -1075,6 +1015,7 @@ p, button {
 }
 
 @media screen and (max-width: 345px)  {
+
     #title {
         font-size: 42px;
         line-height: 50px;
@@ -1091,13 +1032,10 @@ p, button {
     }
 }
 
-
-
 @media screen and (max-width: 345px)  {
 
     #masthead-logo-mobile {
         width: 310px;
 
     }
-
 }

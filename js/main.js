@@ -1,6 +1,8 @@
 window.addEventListener("load", function() {
 
-    // CUSTOM SCROLLBAR
+    /* --------------------------------------- */
+    /*             CUSTOM SCROLLBAR            */
+    /* --------------------------------------- */
 
     // scrollbar functionality
     var docHeight = document.body.scrollHeight - window.innerHeight;
@@ -8,20 +10,19 @@ window.addEventListener("load", function() {
     window.addEventListener("resize", scrollbar);
 
     function scrollbar() {
-        docHeight = document.body.scrollHeight - window.innerHeight;
 
+        docHeight = document.body.scrollHeight - window.innerHeight;
         let percentage = (window.scrollY/docHeight) * 100;
 
+        // prevent donut icon from going all the way to the bottom
         if (percentage > 96) {
             percentage = 96
         }
 
         document.getElementById("scrollbar-thumb").style.top = (percentage) + "%";
-
     }
 
     // scrollbar fade in/out on scroll
-
     window.addEventListener("scroll", scrollbarFade);
 
     let fadeOut;
@@ -40,10 +41,14 @@ window.addEventListener("load", function() {
     function scrollbarFadeOut() {
         document.getElementById("thumb-container").style.opacity = 0;
     }
-    // END CUSTOM SCROLLBAR
 
-    // SPRINKLES VIDEO DISAPPEAR (ONCE SCROLLED PASSED)
+    /* --------------------------------------- */
+    /*    SPRINKLES VIDEO DISAPPEAR (ONCE      */
+    /*             SCROLLED PASSED)            */
+    /* --------------------------------------- */
+
     window.addEventListener("scroll", function() {
+
         if (window.scrollY > 650) {
             document.getElementById("sprinkles-video").style.display = "none";
         }
@@ -51,10 +56,10 @@ window.addEventListener("load", function() {
             document.getElementById("sprinkles-video").style.display = "block";
         }
     });
-    // END SPRINKLES VIDEO DISAPPEAR
 
-
-    // DONUT PARALLAX EFFECT
+    /* --------------------------------------- */
+    /*             DONUT PARALLAX              */
+    /* --------------------------------------- */
 
     var logo = document.getElementById("masthead-logo");
     var mobileLogo = document.getElementById("masthead-logo-mobile");
@@ -78,10 +83,10 @@ window.addEventListener("load", function() {
     var section2 = document.getElementById("section-2-home");
     var sprinklesVideo = document.getElementById("sprinkles-video")
 
-
     window.addEventListener("scroll", function() {
 
         if (window.innerWidth <= 565) {
+
             var scroll = window.scrollY/10;
 
             // logo
@@ -91,6 +96,7 @@ window.addEventListener("load", function() {
             topDonutRow.style.marginTop = "-" + (scroll*10) + "px";
         }
         else {
+
             var scroll = window.scrollY/5;
 
             // logo
@@ -99,8 +105,6 @@ window.addEventListener("load", function() {
             // top donut
             topDonutRow.style.marginTop = "-" + scroll + "px";
         }
-
-
 
         // middle donuts
         middleDonutRow.style.marginTop = "-" + scroll*1.5 + "px";
@@ -129,13 +133,13 @@ window.addEventListener("load", function() {
         sprinklesVideo.style.marginTop =  (scroll*4-200) + "px";
 
     });
-    // END DONUT PARALLAX EFFECT
 
-
-    // MAGNETIC SPRINKLES (DESKTOP ONLY)
+    /* --------------------------------------- */
+    /*           MAGNETIC SPRINKLES            */
+    /*             (DESKTOP ONLY)              */
+    /* --------------------------------------- */
 
     if (window.innerWidth > 768) {
-
 
         // set rotation state to toggle between two states
         var rotateState = 1;
@@ -171,15 +175,14 @@ window.addEventListener("load", function() {
             bottomBoxVal = 0 + cropValue;
         });
 
-
         // event listener for mouseover the sprinkles
         var homeSprinkles = document.querySelectorAll(".home-sprinkle");
 
         for (let i = 0; i < homeSprinkles.length; i++) {
+
             homeSprinkles[i].addEventListener("mouseover", function (e) {
 
                 let spr = e.target;
-
 
                 // get the sprinkle's position
                 let pos = spr.getBoundingClientRect();
@@ -196,18 +199,19 @@ window.addEventListener("load", function() {
                 // get current right and bottom values
                 if (!spr.style.right) {
                     rightVal = Number(getComputedStyle(spr).right.slice(0, -2));
-                } else {
+                }
+                else {
                     rightVal = Number(spr.style.right.slice(0, -2));
                 }
                 if (!spr.style.bottom) {
                     bottomVal = Number(getComputedStyle(spr).bottom.slice(0, -2));
-                } else {
+                }
+                else {
                     bottomVal = Number(spr.style.bottom.slice(0, -2));
                 }
 
                 // get current left value
                 leftBoxVal = window.innerWidth * 0.45;
-
 
                 // move and rotate the sprinkle on every hover
                 // bottom right hover
@@ -216,13 +220,15 @@ window.addEventListener("load", function() {
                     // position
                     if ((rightVal + 60) > leftBoxVal) {
                         spr.style.right = leftBoxVal + "px";
-                    } else {
+                    }
+                    else {
                         spr.style.right = (Number(rightPx) + 60) + "px";
                     }
 
                     if ((bottomVal + 60) > topBoxVal - 100) {
                         spr.style.bottom = topBoxVal + "px";
-                    } else {
+                    }
+                    else {
                         spr.style.bottom = (Number(bottomPx) + 60) + "px";
                     }
 
@@ -230,11 +236,11 @@ window.addEventListener("load", function() {
                     if (rotateState === 1) {
                         spr.style.transform = "rotate(45deg)";
                         rotateState = 0;
-                    } else {
+                    }
+                    else {
                         spr.style.transform = "rotate(145deg)";
                         rotateState = 1;
                     }
-
                 }
 
                 // bottom left hover
@@ -243,13 +249,15 @@ window.addEventListener("load", function() {
                     // position
                     if ((rightVal - 60) < 0) {
                         spr.style.right = "-20px";
-                    } else {
+                    }
+                    else {
                         spr.style.right = (Number(rightPx) - 60) + "px";
                     }
 
                     if ((bottomVal + 60) > topBoxVal - 100) {
                         spr.style.bottom = topBoxVal + "px";
-                    } else {
+                    }
+                    else {
                         spr.style.bottom = (Number(bottomPx) + 60) + "px";
                     }
 
@@ -257,7 +265,8 @@ window.addEventListener("load", function() {
                     if (rotateState === 1) {
                         spr.style.transform = "rotate(94deg)";
                         rotateState = 0;
-                    } else {
+                    }
+                    else {
                         spr.style.transform = "rotate(3deg)";
                         rotateState = 1;
                     }
@@ -270,13 +279,15 @@ window.addEventListener("load", function() {
                     // position
                     if ((rightVal + 60) > leftBoxVal) {
                         spr.style.right = leftBoxVal + "px";
-                    } else {
+                    }
+                    else {
                         spr.style.right = (Number(rightPx) + 60) + "px";
                     }
 
                     if ((bottomVal - 60) < bottomBoxVal + 35) {
                         spr.style.bottom = bottomBoxVal + 35 + "px";
-                    } else {
+                    }
+                    else {
                         spr.style.bottom = (Number(bottomPx) - 60) + "px";
                     }
 
@@ -284,11 +295,11 @@ window.addEventListener("load", function() {
                     if (rotateState === 1) {
                         spr.style.transform = "rotate(143deg)";
                         rotateState = 0;
-                    } else {
+                    }
+                    else {
                         spr.style.transform = "rotate(64deg)";
                         rotateState = 1;
                     }
-
                 }
 
                 // top left hover
@@ -297,13 +308,15 @@ window.addEventListener("load", function() {
                     // position
                     if ((rightVal - 60) < 0) {
                         spr.style.right = "-20px";
-                    } else {
+                    }
+                    else {
                         spr.style.right = (Number(rightPx) - 60) + "px";
                     }
 
                     if ((bottomVal - 60) < bottomBoxVal + 35) {
                         spr.style.bottom = bottomBoxVal + 35 + "px";
-                    } else {
+                    }
+                    else {
                         spr.style.bottom = (Number(bottomPx) - 60) + "px";
                     }
 
@@ -311,11 +324,11 @@ window.addEventListener("load", function() {
                     if (rotateState === 1) {
                         spr.style.transform = "rotate(196deg)";
                         rotateState = 0;
-                    } else {
+                    }
+                    else {
                         spr.style.transform = "rotate(111deg)";
                         rotateState = 1;
                     }
-
                 }
 
                 // left hover
@@ -324,7 +337,8 @@ window.addEventListener("load", function() {
                     // position
                     if ((rightVal - 120) < 0) {
                         spr.style.right = "-20px";
-                    } else {
+                    }
+                    else {
                         spr.style.right = (Number(rightPx) - 120) + "px";
                     }
 
@@ -332,7 +346,8 @@ window.addEventListener("load", function() {
                     if (rotateState === 1) {
                         spr.style.transform = "rotate(229deg)";
                         rotateState = 0;
-                    } else {
+                    }
+                    else {
                         spr.style.transform = "rotate(170deg)";
                         rotateState = 1;
                     }
@@ -344,7 +359,8 @@ window.addEventListener("load", function() {
                     // position
                     if ((rightVal + 120) > leftBoxVal) {
                         spr.style.right = leftBoxVal + "px";
-                    } else {
+                    }
+                    else {
                         spr.style.right = (Number(rightPx) + 120) + "px";
                     }
 
@@ -352,7 +368,8 @@ window.addEventListener("load", function() {
                     if (rotateState === 1) {
                         spr.style.transform = "rotate(268deg)";
                         rotateState = 0;
-                    } else {
+                    }
+                    else {
                         spr.style.transform = "rotate(203deg)";
                         rotateState = 1;
                     }
@@ -364,7 +381,8 @@ window.addEventListener("load", function() {
                     // position
                     if ((bottomVal - 120) < bottomBoxVal + 35) {
                         spr.style.bottom = bottomBoxVal + 35 + "px";
-                    } else {
+                    }
+                    else {
                         spr.style.bottom = (Number(bottomPx) - 120) + "px";
                     }
 
@@ -372,7 +390,8 @@ window.addEventListener("load", function() {
                     if (rotateState === 1) {
                         spr.style.transform = "rotate(328deg)";
                         rotateState = 0;
-                    } else {
+                    }
+                    else {
                         spr.style.transform = "rotate(207deg)";
                         rotateState = 1;
                     }
@@ -384,7 +403,8 @@ window.addEventListener("load", function() {
                     // position
                     if ((bottomVal + 120) > topBoxVal - 100) {
                         spr.style.bottom = topBoxVal + "px";
-                    } else {
+                    }
+                    else {
                         spr.style.bottom = (Number(bottomPx) + 120) + "px";
                     }
 
@@ -392,23 +412,19 @@ window.addEventListener("load", function() {
                     if (rotateState === 1) {
                         spr.style.transform = "rotate(355deg)";
                         rotateState = 0;
-                    } else {
+                    }
+                    else {
                         spr.style.transform = "rotate(302deg)";
                         rotateState = 1;
                     }
                 }
-
             });
-
         }
-
     }
 
-
-    // END MAGNETIC SPRINKLES
-
-
-    // ADJUST HOME SECTION 3 TOP MARGIN
+    /* --------------------------------------- */
+    /*    ADJUST HOME SECTION 3, TOP MARGIN    */
+    /* --------------------------------------- */
 
     // call function on load
     adjustHomeS3();
@@ -434,17 +450,15 @@ window.addEventListener("load", function() {
 
                 document.getElementById("section-3-home").style.marginTop = topMarginValue + "px";
             }
-
         }
         else {
             document.getElementById("section-3-home").style.marginTop = "-265px";
         }
-
     }
 
-    // END ADJUST HOME SECTION 3 TOP MARGIN
-
-    // ADJUST SECTION 2 HOME CONTENT
+    /* --------------------------------------- */
+    /*     ADJUST HOME SECTION 2 CONTENT       */
+    /* --------------------------------------- */
 
     // call function on load
     adjustHomeS2();
@@ -461,15 +475,12 @@ window.addEventListener("load", function() {
                 let topMarginValue = ((-580) - (-930)) * (window.innerWidth - 1920) / (768 - 1920) + (-930);
 
                 document.getElementById("section2-content").style.marginTop = topMarginValue + "px";
-
             }
             else {
                 document.getElementById("section2-content").style.marginTop = "-580px";
             }
-
         }
     }
-
 
     // Remove all previous JS styling on sprinkles when resizing window
 
@@ -478,10 +489,4 @@ window.addEventListener("load", function() {
             homeSprinkles[i].removeAttribute("style");
         }
     });
-
-
-
 });
-
-
-
