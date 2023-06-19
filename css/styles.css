@@ -202,30 +202,38 @@ p, button {
 #title {
     margin-bottom: 10px;
     width: 600px;
+}
+
+#home h1,
+#home h2 {
     font-size: 75px;
     line-height: 70px;
 }
 
 #s2-p {
-    line-height: 42px;
     width: 500px;
+}
+
+#home p {
+    line-height: 42px;
     font-size: 28px;
 }
 
-#section-2-home button,
-#section-3-home button{
+.blue-pink-btn {
     background-image: linear-gradient(to right, #a9e2e6, #f6c4e9);
     border: 1px rgba(245, 223, 240, 0.99) solid;
     border-radius: 10px;
     z-index: 10;
     transition: 0.5s ease all;
-    margin-top: 100px;
     padding: 7px 45px;
     font-size: 28px;
 }
 
-#section-2-home button:hover,
-#section-3-home button:hover {
+#section-2-home button {
+    margin-top: 100px;
+}
+
+.blue-pink-btn:hover {
     background-image: linear-gradient(to right, #f6c4e9, #f6c4e9);
     border: 1px rgba(241, 150, 217, 0.99) solid;
     cursor: pointer;
@@ -484,16 +492,23 @@ p, button {
 
     #title {
         margin-bottom: 10px;
+    }
+
+    #home h1,
+    #home h2 {
         font-size: 65px;
     }
 
     #s2-p {
-        line-height: 42px;
         width: 500px;
+    }
+
+    #home p {
+        line-height: 42px;
         font-size: 25px;
     }
 
-    #section-2-home button {
+    .blue-pink-btn  {
         font-size: 25px;
     }
 
@@ -672,17 +687,24 @@ p, button {
     }
 
     #title {
-        font-size: 55px;
         width: 400px;
+    }
+
+    #home h1,
+    #home h2 {
+        font-size: 55px;
         line-height: 65px;
     }
 
-    #section-2-home button {
+    .blue-pink-btn {
         font-size: 23px;
     }
 
     #s2-p {
         line-height: 33px;
+    }
+
+    #home p {
         font-size: 23px;
     }
 
@@ -728,21 +750,28 @@ p, button {
 
 @media screen and (max-width: 940px)  {
 
-    #title {
+    #home h1,
+    #home h2 {
         font-size: 50px;
         line-height: 55px;
     }
 
-    #section-2-home button {
+    .blue-pink-btn {
         font-size: 21px;
-        margin-top: 40px;
         padding: 7px 35px;
     }
 
+    #section-2-home button {
+        margin-top: 40px;
+    }
+
     #s2-p {
+        width: 400px;
+    }
+
+    #home p {
         line-height: 30px;
         font-size: 21px;
-        width: 400px;
     }
 
     #sprinkle-2 {
@@ -753,19 +782,23 @@ p, button {
 
 @media screen and (max-width: 920px)  {
 
-    #title {
+    #home h1,
+    #home h2 {
         font-size: 45px;
         line-height: 50px;
     }
 
-    #section-2-home button {
+    .blue-pink-btn {
         font-size: 20px;
     }
 
     #s2-p {
+        width: 320px;
+    }
+
+    #home p {
         line-height: 30px;
         font-size: 20px;
-        width: 320px;
     }
 
     #sprinkle-28 {
@@ -815,20 +848,24 @@ p, button {
 
 @media screen and (max-width: 800px)  {
 
-    #title {
+    #home h1,
+    #home h2 {
         font-size: 40px;
         line-height: 45px;
     }
 
-    #section-2-home button {
+    .blue-pink-btn {
         font-size: 18px;
         padding: 6px 30px;
     }
 
     #s2-p {
+        width: 300px;
+    }
+
+    #home p {
         line-height: 25px;
         font-size: 18px;
-        width: 300px;
     }
 }
 
@@ -929,21 +966,25 @@ p, button {
         align-items: center;
     }
 
-    #title {
+    #home h1,
+    #home h2 {
         text-align: center;
         font-size: 50px;
         line-height: 55px;
     }
 
-    #s2-p {
+    #home p {
         text-align: center;
         font-size: 22px;
         line-height: 33px;
     }
 
-    #section-2-home button {
+    .blue-pink-btn {
         font-size: 22px;
         padding: 7px 33px;
+    }
+
+    #section-2-home button {
         margin-top: 27px;
     }
 }
@@ -972,18 +1013,22 @@ p, button {
 
 @media screen and (max-width: 345px)  {
 
-    #title {
+    #home h1,
+    #home h2 {
         font-size: 42px;
         line-height: 50px;
     }
 
     #s2-p {
-        font-size: 20px;
-        line-height: 29px;
         width: 250px;
     }
 
-    #section-2-home button {
+    #home p {
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    .blue-pink-btn {
         font-size: 20px;
     }
 }
