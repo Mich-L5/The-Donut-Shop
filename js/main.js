@@ -15,8 +15,8 @@ window.addEventListener("load", function() {
         let percentage = (window.scrollY/docHeight) * 100;
 
         // prevent donut icon from going all the way to the bottom
-        if (percentage > 96) {
-            percentage = 96
+        if (percentage > 98) {
+            percentage = 98
         }
 
         document.getElementById("scrollbar-thumb").style.top = (percentage) + "%";
@@ -492,6 +492,6 @@ window.addEventListener("load", function() {
 });
 
 // to do:
-// readjust section 2 responsiveness (content stuff)
+// readjust section 2 responsiveness (content stuff) , change to general h2 selector so that it applies to other pages too
 // make sure top content appears ok on load (maybe display none on titles for 1 sec timer)
 // make sure button text is black (not blue) on mobile - probably change the a {} for links in CSS
