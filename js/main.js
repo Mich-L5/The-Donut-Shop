@@ -2,6 +2,7 @@ window.addEventListener("load", function() {
 
     // CUSTOM SCROLLBAR
 
+    // scrollbar functionality
     var docHeight = document.body.scrollHeight - window.innerHeight;
     window.addEventListener("scroll", scrollbar);
     window.addEventListener("resize", scrollbar);
@@ -19,8 +20,26 @@ window.addEventListener("load", function() {
 
     }
 
+    // scrollbar fade in/out on scroll
 
+    window.addEventListener("scroll", scrollbarFade);
 
+    let fadeOut;
+
+    function scrollbarFade() {
+
+        // clear previous timeout (if the user keeps on scrolling)
+        clearTimeout(fadeOut);
+
+        document.getElementById("thumb-container").style.opacity = 1;
+
+        // timeout to fade scrollbar back out
+        fadeOut = setTimeout(scrollbarFadeOut, 1500);
+    }
+
+    function scrollbarFadeOut() {
+        document.getElementById("thumb-container").style.opacity = 0;
+    }
     // END CUSTOM SCROLLBAR
 
     // SPRINKLES VIDEO DISAPPEAR (ONCE SCROLLED PASSED)
@@ -464,7 +483,5 @@ window.addEventListener("load", function() {
 
 });
 
-// make scrollbar thinner on mobile
-// make scrollbar fade in/out
 
 

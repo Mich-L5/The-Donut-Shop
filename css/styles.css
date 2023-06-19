@@ -45,7 +45,11 @@ html {
     z-index: 999;
     border-radius: 15px;
     border: 0.5px solid #42b5be;
+    opacity: 0;
+    transition: 0.5s ease all;
 }
+
+
 
 /* end custom scrollbar */
 
@@ -995,6 +999,15 @@ p, button {
         margin-bottom: 200px;
     }
 
+    #scrollbar-thumb {
+        width: 20px;
+    }
+
+    #thumb-container {
+        width: 19px;
+    }
+
+
 }
 
 @media screen and (max-width: 515px)  {
@@ -1005,6 +1018,7 @@ p, button {
     }
 
 }
+
 
 @media screen and (max-width: 475px)  {
 
