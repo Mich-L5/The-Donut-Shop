@@ -658,6 +658,12 @@ p, button {
     #section-3-home h2 {
         width: 500px;
     }
+
+    #section-4-home h2 {
+        left: -360px;
+        margin-top: 422px;
+        font-size: 73px;
+    }
 }
 
 @media screen and (max-width: 1450px) {
@@ -681,6 +687,12 @@ p, button {
 
     .section-resize {
         height: 800px;
+    }
+
+    #section-4-home h2 {
+        left: -337px;
+        margin-top: 370px;
+        font-size: 68px;
     }
 }
 
@@ -844,6 +856,12 @@ p, button {
 
     .home-sprinkle {
         width: 80px;
+    }
+
+    #section-4-home h2 {
+        left: -337px;
+        margin-top: 370px;
+        font-size: 68px;
     }
 }
 
