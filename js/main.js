@@ -496,4 +496,3 @@ window.addEventListener("load", function() {
 
 // to do:
 // make sure top content appears ok on load (maybe display none on titles for 1 sec timer)
-// make sure button text is black (not blue) on mobile - probably change the a {} for links in CSS

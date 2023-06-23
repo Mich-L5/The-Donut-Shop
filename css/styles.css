@@ -453,10 +453,13 @@ p, button {
     background-image: url("../img/glam-donut-bg.jpg");
     background-size: cover;
     background-position: center;
-    height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.section-resize {
+    height: 1200px;
 }
 
 #section-3-home > div {
@@ -492,7 +495,29 @@ p, button {
 /*** HOME SECTION 4 ***/
 #section-4-home {
     background-color: white;
-    height: 1600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#section-4-home > div:nth-child(1) {
+    background-image: url("../img/mini-milk-donut.jpg");
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+#section-4-home > div:nth-child(2) {
+    background-image: url("../img/donut-print.jpg");
+    width: 40%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section-4-home h2 {
+    transform: rotate(270deg);
+    position: absolute;
+    left: -350px;
 }
 
 
@@ -522,7 +547,7 @@ p, button {
       width: 1000px;
   }
 
-    #section-3-home {
+    .section-resize {
         height: 1100px;
     }
 }
@@ -563,7 +588,7 @@ p, button {
 
 @media screen and (max-width: 1620px)  {
 
-    #section-3-home {
+    .section-resize {
         height: 1000px;
     }
 }
@@ -597,7 +622,7 @@ p, button {
 
 @media screen and (max-width: 1500px)  {
 
-    #section-3-home {
+    .section-resize {
         height: 900px;
     }
 
@@ -625,7 +650,7 @@ p, button {
 
 @media screen and (max-width: 1400px)  {
 
-    #section-3-home {
+    .section-resize {
         height: 800px;
     }
 }
@@ -800,7 +825,7 @@ p, button {
         right: 20px;
     }
 
-    #section-3-home {
+    .section-resize {
         height: 600px;
     }
 }
@@ -896,7 +921,7 @@ p, button {
 
 @media screen and (max-width: 875px)  {
 
-    #section-3-home {
+    .section-resize {
         height: 500px;
     }
 }
@@ -1045,7 +1070,7 @@ p, button {
 
 @media screen and (max-width: 530px)  {
 
-    #section-3-home {
+    .section-resize {
         height: 450px;
     }
 }
@@ -1086,7 +1111,7 @@ p, button {
         margin-top: 27px;
     }
 
-    #section-3-home {
+    .section-resize {
         height: 650px;
         background-position: left;
         background-position-x: -150px;
@@ -1105,7 +1130,6 @@ p, button {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
     }
 
     #section-3-home > div > div > p:nth-child(1),
