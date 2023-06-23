@@ -512,12 +512,23 @@ p, button {
     width: 40%;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-4-home > div:nth-child(2) > p:nth-child(2) {
+    margin-top: -10px;
+    margin-bottom: 70px;
 }
 
 #section-4-home h2 {
     transform: rotate(270deg);
     position: absolute;
-    left: -350px;
+    left: -480px;
+    margin-top: 570px;
+    font-size: 98px;
 }
 
 
@@ -543,12 +554,18 @@ p, button {
 
 @media screen and (max-width: 1700px)  {
 
-  #masthead-logo {
-      width: 1000px;
-  }
+     #masthead-logo {
+          width: 1000px;
+     }
 
     .section-resize {
         height: 1100px;
+    }
+
+    #section-4-home h2 {
+        left: -450px;
+        margin-top: 520px;
+        font-size: 90px;
     }
 }
 
@@ -584,12 +601,24 @@ p, button {
         padding-right: 50px;
     }
 
+    #section-4-home h2 {
+        left: -450px;
+        margin-top: 520px;
+        font-size: 90px;
+    }
+
 }
 
 @media screen and (max-width: 1620px)  {
 
     .section-resize {
         height: 1000px;
+    }
+
+    #section-4-home h2 {
+        left: -400px;
+        margin-top: 470px;
+        font-size: 80px;
     }
 }
 
