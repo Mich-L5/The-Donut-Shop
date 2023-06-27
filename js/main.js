@@ -492,6 +492,36 @@ window.addEventListener("load", function() {
             }
         }
     });
+
+
+    /* --------------------------------------- */
+    /*  ADD X2 "NEW" max. 400px media query    */
+    /* --------------------------------------- */
+
+    addNEWText();
+
+    window.addEventListener("resize", function () {
+        addNEWText();
+    });
+
+    function addNEWText() {
+
+        if (window.innerWidth < 365) {
+            document.getElementById("new-text").innerText = "NEW NEW NEW NEW NEW";
+        }
+
+        else if (window.innerWidth < 400) {
+            document.getElementById("new-text").innerText = "NEW NEW NEW NEW";
+        }
+
+        else {
+            document.getElementById("new-text").innerText = "NEW NEW NEW";
+        }
+
+    }
+
+
+
 });
 
 // to do:

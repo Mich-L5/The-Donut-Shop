@@ -937,6 +937,12 @@ p, button {
         bottom: 430px;
         right: 40px;
     }
+
+    #section-4-home h2 {
+        left: -240px;
+        margin-top: 275px;
+        font-size: 48px;
+    }
 }
 
 @media screen and (max-width: 920px)  {
@@ -971,12 +977,24 @@ p, button {
     .home-sprinkle {
         width: 60px;
     }
+
+    #section-4-home h2 {
+        left: -240px;
+        margin-top: 275px;
+        font-size: 48px;
+    }
 }
 
 @media screen and (max-width: 875px)  {
 
     .section-resize {
         height: 500px;
+    }
+
+    #section-4-home h2 {
+        left: -200px;
+        margin-top: 230px;
+        font-size: 40px;
     }
 }
 
@@ -1127,6 +1145,31 @@ p, button {
     .section-resize {
         height: 450px;
     }
+
+    #section-4-home {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    #section-4-home > div:nth-child(1) {
+        width: 100%;
+        height: 400px;
+    }
+
+    #section-4-home > div:nth-child(2) {
+        width: 100%;
+        height: 200px;
+    }
+
+    #section-4-home button {
+        margin-top: -40px;
+    }
+
+    #section-4-home h2 {
+        left: -250px;
+        margin-top: 290px;
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 515px)  {
@@ -1170,6 +1213,11 @@ p, button {
         background-position: left;
         background-position-x: -150px;
         background-position-y: 20px;
+    }
+
+    #section-3-home {
+        background-position-x: -170px;
+        background-position-y: 10px;
     }
 
     #section-3-home > div {
@@ -1263,6 +1311,12 @@ p, button {
     #section-3-home > div > div:nth-child(2) {
         flex-direction: column;
     }
+
+    #section-4-home h2 {
+        left: -245px;
+        margin-top: 280px;
+        font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 385px)  {
@@ -1270,10 +1324,6 @@ p, button {
     #section-3-home > div img {
         margin-left: -200px;
         margin-bottom: 130px;
-    }
-
-    #section-3-home {
-        background-position-x: -170px;
     }
 }
 
@@ -1292,7 +1342,15 @@ p, button {
 
     #section-3-home {
         background-position-x: -185px;
-        background-positiony: 40px;
+        background-position-y: 40px;
+    }
+
+    #section-4-home h2 {
+        left: -250px;
+        margin-top: 278px;
+        font-size: 30px;
+        margin-right: -20px;
+        margin-left: -20px;
     }
 }
 
@@ -1320,6 +1378,10 @@ p, button {
     #section-3-home > div img {
         margin-left: -170px;
         margin-bottom: 145px;
+    }
+
+    #section-4-home h2 {
+        font-size: 30px;
     }
 }
 
