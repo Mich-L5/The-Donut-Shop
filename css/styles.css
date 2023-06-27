@@ -9,6 +9,16 @@
     src: url("../font/halibut-serif-thin.woff");
 }
 
+@font-face {
+    font-family: shapiro-115;
+    src: url("../font/Shapiro-115-Plus-Extd.otf");
+}
+
+@font-face {
+    font-family: shapiro-95;
+    src: url("../font/Shapiro-95-Super-Wide.otf");
+}
+
 /*** GENERAL ***/
 html, body {
     margin: 0;
@@ -529,6 +539,33 @@ p, button {
     left: -480px;
     margin-top: 570px;
     font-size: 98px;
+}
+
+/*** HOME SECTION 5 ***/
+#section-5-home {
+    background-image: url("../img/pink-blue-bg.jpg");
+    margin-top: -70px;
+    display: flex;
+}
+
+.pink-fill-text {
+    font-family: shapiro-95;
+    color: #f47daf;
+}
+
+#donut-tower {
+    height: 900px;
+    width: auto;
+}
+
+.donut-sketch {
+    width: 50px;
+    height: auto;
+}
+
+.donut-sketch-container {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -1071,6 +1108,10 @@ p, button {
         background-image: url("../img/3-donuts-falling-sprinkles-bg.png");
         background-position: right;
         background-size: cover;
+    }
+
+    #section-4-home > div:nth-child(2) {
+        background-attachment: scroll;
     }
 }
 
