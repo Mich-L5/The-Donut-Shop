@@ -630,6 +630,43 @@ p, button {
     margin-left: 70px;
 }
 
+/*** HOME SECTION 6 ***/
+#section-6-home {
+    background-image: url("../img/pink-teal-donuts-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section-6-home h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+#section-6-home > div:nth-child(1) {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+#section-6-home > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+#section-6-home button {
+    margin-top: -235px;
+}
+
+#section-6-home-btn {
+    background-color: #f6c4e9;
+    background-image: revert;
+}
+
+#section-6-home-btn:hover {
+    background-color: #f1bde3;
+}
+
 
 
 /********** MEDIA QUERIES **********/
