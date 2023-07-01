@@ -831,6 +831,10 @@ p, button {
     #blue-sparks {
         width: 120px;
     }
+
+    #section-6-home button {
+        margin-top: -170px;
+    }
 }
 
 @media screen and (max-width: 1450px) {
@@ -884,6 +888,10 @@ p, button {
     #section-5-home p {
         margin-top: -50px;
         margin-bottom: 20px;
+    }
+
+    #section-6-home button {
+        margin-top: -140px;
     }
 }
 
@@ -1129,6 +1137,10 @@ p, button {
     }
 
     #section-5-home > div:nth-child(2) > div:nth-child(2) {
+        margin-top: -100px;
+    }
+
+    #section-6-home button {
         margin-top: -100px;
     }
 }
