@@ -1392,7 +1392,7 @@ p, button {
 
     #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
         text-align: center;
-        width: revert;
+        width: 400px;
         margin-left: 0;
         line-height: 45px;
     }
