@@ -637,6 +637,7 @@ p, button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-position-x: center;
 }
 
 #section-6-home h2 {
@@ -665,6 +666,10 @@ p, button {
 
 #section-6-home-btn:hover {
     background-color: #f1bde3;
+}
+
+#section-6-home p {
+    margin-right: 45px;
 }
 
 
@@ -1174,6 +1179,10 @@ p, button {
         bottom: 250px;
         right: 320px;
     }
+
+    #section-6-home button {
+        margin-top: -130px;
+    }
 }
 
 @media screen and (max-width: 940px)  {
@@ -1281,6 +1290,10 @@ p, button {
     #section-5-home >div:nth-child(1) > div:nth-child(2) {
         margin-top: 130px;
     }
+
+    #section-6-home button {
+        margin-top: -95px;
+    }
 }
 
 @media screen and (max-width: 850px)  {
@@ -1297,6 +1310,10 @@ p, button {
     #sprinkle-7 {
         bottom: 380px;
         right: 230px;
+    }
+
+    #section-6-home h2 {
+        margin-bottom: -5px;
     }
 }
 
@@ -1340,6 +1357,10 @@ p, button {
     #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
         width: 250px;
         line-height: 55px;
+    }
+
+    #section-6-home button {
+        margin-top: -115px;
     }
 }
 
@@ -1460,7 +1481,7 @@ p, button {
     }
 
     #section-5-home {
-        height: 700px;
+        height: 720px;
     }
 
     .donut-sketch {
@@ -1501,6 +1522,13 @@ p, button {
 
     #thumb-container {
         width: 19px;
+    }
+}
+
+@media screen and (max-width: 608px)  {
+
+    #section-6-home div:nth-child(1) {
+        margin-top: -30px;
     }
 }
 
@@ -1642,6 +1670,30 @@ p, button {
 
     #section-5-home {
         height: 730px;
+        background-position-y: 200px;
+    }
+
+    #section-6-home div:nth-child(1) {
+        margin-top: 10px;
+    }
+
+    #section-6-home {
+        margin-top: -20px;
+        background-repeat: no-repeat;
+    }
+
+    #section-6-home h2 {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #section-6-home p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #section-6-home > div:nth-child(1) {
+        padding-left: revert;
     }
 }
 
@@ -1653,10 +1705,23 @@ p, button {
     }
 }
 
+@media screen and (max-width: 460px)  {
+
+    #section-6-home button {
+        margin-top: -170px;
+    }
+}
+
 @media screen and (max-width: 445px)  {
 
     #section-3-home > div img {
         margin-left: -240px;
+    }
+}
+
+@media screen and (max-width: 440px)  {
+    #section-6-home > div:nth-child(1) {
+        margin-top: -20px;
     }
 }
 
@@ -1683,6 +1748,13 @@ p, button {
 
     #masthead-logo-mobile {
         width: 370px;
+    }
+}
+
+@media screen and (max-width: 401px)  {
+    #section-6-home p {
+        line-height: 25px;
+        font-size: 20px;
     }
 }
 
@@ -1755,6 +1827,12 @@ p, button {
     }
 }
 
+@media screen and (max-width: 348px)  {
+    #section-6-home p {
+        line-height: 22px;
+    }
+}
+
 @media screen and (max-width: 345px)  {
 
     #home h1,
@@ -1789,8 +1867,18 @@ p, button {
         margin-right: 0px;
     }
 
+    #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
+        width: 98vw;
+        margin-left: 10px;
+    }
+
+    #blue-sparks {
+      margin-left: -5px;
+    }
+
     #masthead-logo-mobile {
         width: 310px;
 
     }
+
 }
