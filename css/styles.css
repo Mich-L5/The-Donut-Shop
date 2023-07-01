@@ -549,6 +549,7 @@ p, button {
     justify-content: space-between;
     padding-right: 20px;
     padding-left: 10px;
+    background-position-x: center;
 
 }
 
@@ -834,8 +835,13 @@ p, button {
     }
 
     #section-5-home > div:nth-child(2) > div:nth-child(2) {
-        margin-right: 120px;
+        margin-right: 105px;
         margin-top: -100px;
+    }
+
+    #section-5-home > div:nth-child(2) h2 {
+        margin-right: 0px;
+        margin-left: -100px;
     }
 
     #section-5-home p {
@@ -897,6 +903,17 @@ p, button {
     }
 }
 
+@media screen and (max-width: 1280px) {
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
+        width: 500px;
+    }
+
+    #section-5-home > div:nth-child(1) > div:nth-child(2)  {
+        margin-top: 205px;
+    }
+
+}
 
 @media screen and (max-width: 1250px) {
 
@@ -942,6 +959,18 @@ p, button {
         left: -290px;
         margin-top: 315px;
         font-size: 58px;
+    }
+
+    #section-5-home > div:nth-child(1) > div:nth-child(2)  {
+        margin-top: 180px;
+    }
+
+    #donut-tower {
+        height: 480px;
+    }
+
+    #blue-sparks {
+        width: 90px;
     }
 }
 
@@ -1030,6 +1059,41 @@ p, button {
     .section-resize {
         height: 600px;
     }
+
+    #section-5-home > div:nth-child(1) > div:nth-child(2)  {
+        margin-top: 155px;
+    }
+
+    #donut-tower {
+        height: 400px;
+    }
+
+    #blue-sparks {
+        width: 80px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) {
+        margin-right: 105px;
+        margin-top: -180px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
+        line-height: 65px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) p {
+        margin-top: -20px;
+        margin-bottom: 25px;
+    }
+
+    .donut-sketch {
+        width: 40px;
+        margin-top: 12px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) {
+        margin-top: -100px;
+    }
 }
 
 @media screen and (max-width: 1000px)  {
@@ -1044,6 +1108,14 @@ p, button {
 
     .home-sprinkle {
         width: 70px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
+        width: 400px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) {
+        margin-top: -150px;
     }
 }
 
@@ -1090,6 +1162,10 @@ p, button {
         left: -240px;
         margin-top: 275px;
         font-size: 48px;
+    }
+
+    #section-5-home > div:nth-child(1) > div:nth-child(2) {
+        margin-left: 40px;
     }
 }
 
@@ -1143,6 +1219,18 @@ p, button {
         left: -200px;
         margin-top: 230px;
         font-size: 40px;
+    }
+
+    #donut-tower {
+        height: 330px;
+    }
+
+    #blue-sparks {
+        width: 65px;
+    }
+
+    #section-5-home >div:nth-child(1) > div:nth-child(2) {
+        margin-top: 130px;
     }
 }
 
@@ -1199,6 +1287,11 @@ p, button {
         line-height: 25px;
         font-size: 18px;
     }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
+        width: 250px;
+        line-height: 55px;
+    }
 }
 
 @media screen and (max-width: 768px)  {
@@ -1243,6 +1336,22 @@ p, button {
     #section-3-home > div > div > p {
         width: 205px;
     }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
+        width: 230px;
+        line-height: 55px;
+    }
+}
+
+@media screen and (max-width: 690px)  {
+
+    #section-5-home > div:nth-child(1) > div:nth-child(2) {
+        margin-left: 15px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) {
+        margin-right: 80px;
+    }
 }
 
 @media screen and (max-width: 665px)  {
@@ -1256,6 +1365,60 @@ p, button {
     }
 }
 
+@media screen and (max-width: 625px)  {
+
+    #section-5-home > div:nth-child(1) > div:nth-child(2),
+    #section-5-home > div:nth-child(2) > div:nth-child(2)
+    {
+        width: 90%;
+        position: absolute;
+        margin-right: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) {
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+
+    #section-5-home > div:nth-child(1) > div:nth-child(2) {
+        padding-left: 60px;
+        margin-top: 270px;
+        width: 400px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
+        text-align: center;
+        width: revert;
+        margin-left: 0;
+        line-height: 45px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) button {
+        margin-top: 375px;
+        width: 225px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(1)  {
+        margin-right: -10px;
+    }
+
+    #blue-sparks {
+        margin-top: -175px;
+    }
+
+    #section-5-home {
+        height: 700px;
+    }
+
+    .donut-sketch {
+        width: 30px;
+    }
+
+}
 
 @media screen and (max-width: 615px)  {
 
@@ -1410,6 +1573,16 @@ p, button {
     #section-3-home > div:nth-child(2) {
         margin-bottom: 70px;
     }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
+        text-align: center;
+        width: revert;
+        margin-left: 0;
+        line-height: 45px;
+        width: 330px;
+        font-size: 40px;
+    }
+
 }
 
 @media screen and (max-width: 465px)  {
