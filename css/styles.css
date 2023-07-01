@@ -672,7 +672,34 @@ p, button {
     margin-right: 45px;
 }
 
+/*** HOME SECTION 7 ***/
+#section-7-home {
+    background-color: black;
+    background-image: url("../img/teal-donuts-bg-darkened.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
+#section-7-home h2 {
+    font-family: shapiro-95;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#section-7-home p {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 /********** MEDIA QUERIES **********/
 
@@ -1387,6 +1414,11 @@ p, button {
     #section-4-home > div:nth-child(2) {
         background-attachment: scroll;
     }
+
+    #section-7-home {
+        background-attachment: scroll;
+    }
+
 }
 
 @media screen and (max-width: 730px)  {
@@ -1487,7 +1519,6 @@ p, button {
     .donut-sketch {
         width: 30px;
     }
-
 }
 
 @media screen and (max-width: 615px)  {
