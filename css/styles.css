@@ -701,6 +701,20 @@ p, button {
     margin-right: 20px;
 }
 
+/*** HOME SECTION 8 ***/
+#section-8-home {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white), url("../img/gift-donut-bg.jpg");
+    background-size: contain;
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+
+}
+
 /********** MEDIA QUERIES **********/
 
 @media screen and (max-width: 1800px) {
