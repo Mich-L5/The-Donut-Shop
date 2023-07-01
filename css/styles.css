@@ -1385,9 +1385,9 @@ p, button {
     }
 
     #section-5-home > div:nth-child(1) > div:nth-child(2) {
-        padding-left: 60px;
+        padding-left: 75px;
         margin-top: 270px;
-        width: 400px;
+        width: 80vw;
     }
 
     #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
@@ -1574,6 +1574,10 @@ p, button {
         margin-bottom: 70px;
     }
 
+    #section-4-home button {
+        margin-top: -60px;
+    }
+
     #section-5-home > div:nth-child(2) > div:nth-child(2) h2 {
         text-align: center;
         width: revert;
@@ -1583,6 +1587,9 @@ p, button {
         font-size: 40px;
     }
 
+    #section-5-home {
+        height: 730px;
+    }
 }
 
 @media screen and (max-width: 465px)  {
@@ -1598,6 +1605,18 @@ p, button {
     #section-3-home > div img {
         margin-left: -240px;
     }
+}
+
+@media screen and (max-width: 430px) {
+    #section-5-home > div:nth-child(1) > div:nth-child(2) {
+        width: 70vw;
+        padding-left: 85px;
+    }
+
+    #section-5-home > div:nth-child(2) > div:nth-child(2) {
+        margin-right: 2px;
+    }
+
 }
 
 @media screen and (max-width: 420px)  {
@@ -1649,6 +1668,10 @@ p, button {
     #section-3-home > div img {
         margin-left: -200px;
         margin-bottom: 130px;
+    }
+
+    #section-5-home > div:nth-child(1) > div:nth-child(2) {
+        padding-left: 75px;
     }
 }
 
@@ -1708,9 +1731,10 @@ p, button {
     #section-4-home h2 {
         font-size: 30px;
     }
-}
 
-@media screen and (max-width: 345px)  {
+    #section-5-home > div:nth-child(2) > div:nth-child(2) {
+        margin-right: 0px;
+    }
 
     #masthead-logo-mobile {
         width: 310px;
