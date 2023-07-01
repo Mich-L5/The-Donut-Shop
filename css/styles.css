@@ -711,8 +711,21 @@ p, button {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: center;
     text-align: right;
+    padding-right: 50px;
+}
 
+#section-8-home > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 600px;
+}
+
+#section-8-home button {
+    align-self: flex-end;
 }
 
 /********** MEDIA QUERIES **********/
@@ -938,6 +951,15 @@ p, button {
 
     #section-6-home button {
         margin-top: -140px;
+    }
+
+    #section-8-home > div {
+        height: 400px;
+    }
+
+    #section-8-home h2 {
+        width: 500px;
+        text-align: right;
     }
 }
 
@@ -1189,6 +1211,11 @@ p, button {
     #section-6-home button {
         margin-top: -100px;
     }
+
+    #section-8-home {
+        background-position-y: center;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.82), white), url("../img/gift-donut-bg.jpg");
+    }
 }
 
 @media screen and (max-width: 1000px)  {
@@ -1211,6 +1238,10 @@ p, button {
 
     #section-5-home > div:nth-child(2) > div:nth-child(2) {
         margin-top: -150px;
+    }
+
+    #section-8-home > div {
+        height: 300px;
     }
 }
 
@@ -1305,6 +1336,12 @@ p, button {
         left: -240px;
         margin-top: 275px;
         font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 900px)  {
+    #section-8-home {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.95), white), url("../img/gift-donut-bg.jpg");
     }
 }
 
@@ -1533,6 +1570,14 @@ p, button {
     .donut-sketch {
         width: 30px;
     }
+
+    #section-8-home h2 {
+        width: 400px;
+    }
+
+    #section-8-home {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.91), rgb(255, 255, 255), white), url("../img/gift-donut-bg.jpg");
+    }
 }
 
 @media screen and (max-width: 615px)  {
@@ -1543,6 +1588,13 @@ p, button {
 
     #donut-container {
         margin-top: 55px;
+    }
+}
+
+@media screen and (max-width: 608px)  {
+
+    #section-6-home div:nth-child(1) {
+        margin-top: -30px;
     }
 }
 
@@ -1567,13 +1619,6 @@ p, button {
 
     #thumb-container {
         width: 19px;
-    }
-}
-
-@media screen and (max-width: 608px)  {
-
-    #section-6-home div:nth-child(1) {
-        margin-top: -30px;
     }
 }
 
@@ -1740,6 +1785,28 @@ p, button {
     #section-6-home > div:nth-child(1) {
         padding-left: revert;
     }
+
+    #section-8-home button {
+        align-self: center;
+    }
+
+    #section-8-home {
+        padding: 0;
+        align-items: center;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.86), rgb(255, 255, 255), white), url("../img/gift-donut-bg.jpg");
+    }
+
+    #section-8-home p {
+        width: 100vw;
+        margin-top: -20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 90vw;
+    }
+
+    #section-8-home h2 {
+        width: 100vw;
+    }
 }
 
 @media screen and (max-width: 465px)  {
@@ -1786,6 +1853,10 @@ p, button {
 
     #section-3-home > div img {
         margin-left: -220px;
+    }
+
+    #section-8-home h2 {
+        font-size: 40px;
     }
 }
 
@@ -1924,6 +1995,10 @@ p, button {
     #masthead-logo-mobile {
         width: 310px;
 
+    }
+
+    #section-8-home h2 {
+        font-size: 38px;
     }
 
 }
