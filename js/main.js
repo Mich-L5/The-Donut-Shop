@@ -1,6 +1,23 @@
 window.addEventListener("load", function() {
 
     /* --------------------------------------- */
+    /*         DISPLAY HEADER ON SCROLL        */
+    /* --------------------------------------- */
+
+    /*
+    var header = document.getElementById("hamburger-container");
+    window.addEventListener('scroll', showHeader);
+
+    function showHeader() {
+        if (window.scrollY > 120) {
+            header.classList.add("show-header");
+        } else {
+            header.classList.remove("show-header");
+        }
+    }*/
+
+
+    /* --------------------------------------- */
     /*             CUSTOM SCROLLBAR            */
     /* --------------------------------------- */
 
@@ -15,8 +32,8 @@ window.addEventListener("load", function() {
         let percentage = (window.scrollY/docHeight) * 100;
 
         // prevent donut icon from going all the way to the bottom
-        if (percentage > 98) {
-            percentage = 98
+        if (percentage > 96) {
+            percentage = 96
         }
 
         document.getElementById("scrollbar-thumb").style.top = (percentage) + "%";

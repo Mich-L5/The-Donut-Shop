@@ -19,6 +19,11 @@
     src: url("../font/Shapiro-95-Super-Wide.otf");
 }
 
+@font-face {
+    font-family: shapiro-75;
+    src: url("../font/Shapiro-75-Heavy-Wide.otf");
+}
+
 /*** GENERAL ***/
 html, body {
     margin: 0;
@@ -74,6 +79,148 @@ p, button {
     font-family: halibut-serif-thin;
     color: black;
 }
+
+/*** HEADER ***/
+/*
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(13, 203, 222, 0.24);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    opacity: 0;
+    transition: ease 1s;
+    border-bottom: solid #00b8be 1px;
+}
+
+header img {
+    width: auto;
+    height: 55px;
+    margin-left: 5px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin-right: 35px;
+}
+
+header li {
+    color: white;
+    font-family: shapiro-75;
+    font-size: 20px;
+    margin-left: 30px;
+    font-weight: 100;
+    transition: .5s;
+}
+
+header li:hover {
+    color: #f5a7d5;
+    cursor: pointer;
+}
+
+.show-header {
+    opacity: 1;
+}
+
+#hamburger-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgba(91, 225, 232, 0.28);
+    border: solid .5px #42b5be;
+    padding: 8px 6px;
+}
+
+.hamburger-bar {
+    width: 25px;
+    height: 1.5px;
+    background-color: #42b5be;
+    margin: 3px 2px 3px 2px;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    background-color: rgba(169, 226, 230, 0.8);
+    height: 100vh;
+    border-right: #42b5be solid 0.5px;
+}
+
+header ul {
+    list-style: none;
+    color: white;
+    font-family: shapiro-75;
+    margin-top: 100px;
+    padding-right: 50px;
+    font-size: 35px;
+}
+
+header li {
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+}
+
+header li:hover {
+    color: #f5a7d5;
+    cursor: pointer;
+}
+
+header menu {
+    margin-left: -65px;
+}
+
+.blackout {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.8;
+}*/
+
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    top: 10px;
+    left: 10px;
+}
+
+#menu-container > img:nth-child(1) {
+    height: auto;
+    width: 65px;
+}
+
+#menu-container > img:nth-child(2) {
+    height: auto;
+    width: 35px;
+    margin-left: 14px;
+    margin-top: -5px;
+    animation: spin-menu 3s infinite linear;
+    filter: drop-shadow(0px 0px 1px rgba(14, 14, 14, 0.42));
+}
+
+#menu-container > img:nth-child(2):hover {
+    cursor: pointer;
+}
+
+@keyframes spin-menu {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
 
 /*** HOME SECTION 1 ***/
 #section-1-home {
