@@ -1,22 +1,6 @@
 window.addEventListener("load", function() {
 
     /* --------------------------------------- */
-    /*         DISPLAY HEADER ON SCROLL        */
-    /* --------------------------------------- */
-
-    /*
-    var header = document.getElementById("hamburger-container");
-    window.addEventListener('scroll', showHeader);
-
-    function showHeader() {
-        if (window.scrollY > 120) {
-            header.classList.add("show-header");
-        } else {
-            header.classList.remove("show-header");
-        }
-    }*/
-
-    /* --------------------------------------- */
     /*             OPEN/CLOSE MENU             */
     /* --------------------------------------- */
 
@@ -24,6 +8,7 @@ window.addEventListener("load", function() {
 
     function openMenu() {
         document.querySelector("header span").style.opacity = "1";
+        document.querySelector("header span").style.zIndex = "1001";
         document.querySelector("header > div").classList.remove("close-menu");
         document.querySelector("header > div").classList.add("open-menu");
         document.getElementById("menu-container").style.opacity = "0";
@@ -36,13 +21,12 @@ window.addEventListener("load", function() {
 
     function closeMenu() {
         document.querySelector("header span").style.opacity = "0";
+        document.querySelector("header span").style.zIndex = "0";
         document.querySelector("header > div").classList.remove("open-menu");
         document.querySelector("header > div").classList.add("close-menu");
         document.getElementById("menu-container").style.opacity = "1";
         document.getElementById("menu-container").style.zIndex = "1003";
     }
-
-
 
     /* --------------------------------------- */
     /*             CUSTOM SCROLLBAR            */
@@ -564,9 +548,5 @@ window.addEventListener("load", function() {
 
     }
 
-
-
 });
 
-// to do:
-// make sure top content appears ok on load (maybe display none on titles for 1 sec timer)
