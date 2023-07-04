@@ -16,6 +16,33 @@ window.addEventListener("load", function() {
         }
     }*/
 
+    /* --------------------------------------- */
+    /*             OPEN/CLOSE MENU             */
+    /* --------------------------------------- */
+
+    document.getElementById("menu-icon").addEventListener("click", openMenu);
+
+    function openMenu() {
+        document.querySelector("header").style.opacity = "1";
+        document.querySelector("header > div").classList.remove("close-menu");
+        document.querySelector("header > div").classList.add("open-menu");
+        document.getElementById("menu-container").style.opacity = "0";
+        document.getElementById("menu-container").style.zIndex = "0";
+        document.querySelector("body").style.overflowY = "hidden";
+    }
+
+    document.querySelector("header i").addEventListener("click", closeMenu);
+    document.getElementById("x-icon").addEventListener("click", closeMenu);
+
+    function closeMenu() {
+        document.querySelector("header").style.opacity = "0";
+        document.querySelector("header > div").classList.remove("open-menu");
+        document.querySelector("header > div").classList.add("close-menu");
+        document.getElementById("menu-container").style.opacity = "1";
+        document.getElementById("menu-container").style.zIndex = "1003";
+    }
+
+
 
     /* --------------------------------------- */
     /*             CUSTOM SCROLLBAR            */

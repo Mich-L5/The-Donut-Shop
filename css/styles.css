@@ -189,7 +189,7 @@ header menu {
     display: flex;
     flex-direction: column;
     position: fixed;
-    z-index: 1000;
+    z-index: 1003;
     top: 10px;
     left: 10px;
 }
@@ -204,7 +204,7 @@ header menu {
     width: 35px;
     margin-left: 14px;
     margin-top: -5px;
-    animation: spin-menu 3s infinite linear;
+    animation: spin-menu 5s infinite linear;
     filter: drop-shadow(0px 0px 1px rgba(14, 14, 14, 0.42));
 }
 
@@ -219,6 +219,80 @@ header menu {
     100% {
         rotate: 360deg;
     }
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.89);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1001;
+    opacity: 0;
+    transition: .5s;
+}
+
+header > div {
+    background-color: #5dc6ce;
+    position: fixed;
+    left: -220px;
+    top: 0;
+    height: 100vh;
+    width: 220px;
+    z-index: 1002;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-right: 1px solid #f47daf;
+    transition: .7s;
+}
+
+.open-menu {
+    left: 0;
+}
+
+.close-menu {
+    left: -220px;
+}
+
+header ul {
+    list-style: none;
+    margin: 50px 0 0 10px;
+    padding: 0;
+}
+
+header a {
+    color: white;
+    font-family: shapiro-75;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header li {
+    margin-bottom: 20px;
+}
+
+header img {
+    width: auto;
+    height: 80px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+header menu {
+    margin: 0;
+    padding: 0;
+}
+
+header i {
+    color: #2f979f;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+header i:hover {
+    cursor: pointer;
 }
 
 
