@@ -337,6 +337,8 @@ header i:hover {
     justify-content: center;
     height: 100%;
     position: relative;
+
+    margin-top: 1000px;
 }
 
 #title {
