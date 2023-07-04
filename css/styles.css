@@ -221,7 +221,7 @@ header menu {
     }
 }
 
-header {
+.menu-bg {
     background-color: rgba(0, 0, 0, 0.89);
     position: fixed;
     height: 100vh;
@@ -266,6 +266,11 @@ header a {
     font-family: shapiro-75;
     text-decoration: none;
     font-size: 20px;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #ddf3f5;
 }
 
 header li {
@@ -289,10 +294,12 @@ header i {
     font-size: 40px;
     margin-top: 15px;
     margin-left: 10px;
+    transition: .2s;
 }
 
 header i:hover {
     cursor: pointer;
+    color: #28868d;
 }
 
 

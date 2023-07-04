@@ -23,7 +23,7 @@ window.addEventListener("load", function() {
     document.getElementById("menu-icon").addEventListener("click", openMenu);
 
     function openMenu() {
-        document.querySelector("header").style.opacity = "1";
+        document.querySelector("header span").style.opacity = "1";
         document.querySelector("header > div").classList.remove("close-menu");
         document.querySelector("header > div").classList.add("open-menu");
         document.getElementById("menu-container").style.opacity = "0";
@@ -31,11 +31,11 @@ window.addEventListener("load", function() {
         document.querySelector("body").style.overflowY = "hidden";
     }
 
-    document.querySelector("header i").addEventListener("click", closeMenu);
     document.getElementById("x-icon").addEventListener("click", closeMenu);
+    document.querySelector("header span").addEventListener("click", closeMenu);
 
     function closeMenu() {
-        document.querySelector("header").style.opacity = "0";
+        document.querySelector("header span").style.opacity = "0";
         document.querySelector("header > div").classList.remove("open-menu");
         document.querySelector("header > div").classList.add("close-menu");
         document.getElementById("menu-container").style.opacity = "1";
