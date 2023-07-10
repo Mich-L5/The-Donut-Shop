@@ -869,6 +869,34 @@ footer {
     font-family: shapiro-75;
 }
 
+/*** MENU ***/
+
+#menu h1 {
+    font-size: 100px;
+}
+
+#section-1-menu {
+    background-image: url("../img/pink-yellow-blue-donuts.jpg");
+    height: 300px;
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-2-menu {
+    display: flex;
+    justify-content: center;
+}
+
+#food-menu {
+    height: auto;
+    position: relative;
+    width: 500px;
+    margin-top: 40px;
+}
+
 /********** MEDIA QUERIES **********/
 
 @media screen and (max-width: 1800px) {
