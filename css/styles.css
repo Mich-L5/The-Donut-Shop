@@ -876,13 +876,26 @@ footer {
 }
 
 #section-1-menu {
-    background-image: url("../img/pink-yellow-blue-donuts.jpg");
+    background-color: black;
     height: 300px;
     width: 100%;
     margin-top: -20px;
+    color: white;
+}
+
+#section-1-menu span {
+    background-image: url("../img/pink-yellow-blue-donuts.jpg");
+    height: 300px;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 500px;
 }
 
 #section-2-menu {
