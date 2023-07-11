@@ -564,6 +564,31 @@ window.addEventListener("load", function() {
         }
     }
 
+    /* --------------------------------------- */
+    /*       OPEN FOOD MENU FULL SIZE          */
+    /* --------------------------------------- */
+
+    if (document.getElementById("food-menu-img")) {
+        document.getElementById("food-menu-img").addEventListener("click", menuToggle);
+    }
+
+    let menuToggleStatus = 0;
+    function menuToggle() {
+        if (menuToggleStatus === 0) {
+
+            document.getElementById("food-menu-img").classList.add("food-menu-zoom-in");
+            document.getElementById("food-menu-img").classList.remove("food-menu");
+            menuToggleStatus = 1;
+        }
+        else {
+
+            document.getElementById("food-menu-img").classList.remove("food-menu-zoom-in");
+            document.getElementById("food-menu-img").classList.add("food-menu");
+            menuToggleStatus = 0;
+        }
+    }
+
+
 
 });
 

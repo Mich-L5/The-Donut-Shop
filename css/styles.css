@@ -853,22 +853,6 @@ header i:hover {
     align-self: flex-end;
 }
 
-/*** FOOTER ***/
-footer {
-    background-color: #ddf3f5;
-    display: flex;
-    justify-content: center;
-    border-top: .5px solid #f47daf;
-    margin-bottom: -5px;
-}
-
-#copyright {
-    color: #f47daf;
-    margin: -2px;
-    font-size: 13px !important;
-    font-family: shapiro-75;
-}
-
 /*** MENU ***/
 
 #menu h1,
@@ -906,6 +890,7 @@ footer {
     background-image: url("../img/donut-print.jpg");
 }
 
+/*** ORDER ***/
 #section-2-order {
     background-image: url("../img/donut-print.jpg");
     background-size: 100vw;
@@ -919,12 +904,43 @@ footer {
     padding: 70px 50px 0 50px;
 }
 
-#food-menu {
+.food-menu {
     height: auto;
     position: relative;
     width: 900px;
     margin-top: 40px;
     margin-bottom: 80px;
+}
+
+.food-menu:hover {
+    cursor: zoom-in;
+}
+
+.food-menu-zoom-in {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.food-menu-zoom-in:hover {
+    cursor: zoom-out;
+}
+
+/*** FOOTER ***/
+footer {
+    background-color: #ddf3f5;
+    display: flex;
+    justify-content: center;
+    border-top: .5px solid #f47daf;
+    margin-bottom: -5px;
+}
+
+#copyright {
+    color: #f47daf;
+    margin: -2px;
+    font-size: 13px !important;
+    font-family: shapiro-75;
 }
 
 /********** MEDIA QUERIES **********/
@@ -935,7 +951,7 @@ footer {
         bottom: -250px;
     }
 
-    #food-menu {
+    .food-menu {
         width: 800px;
     }
 }
@@ -1069,7 +1085,7 @@ footer {
         width: 100px;
     }
 
-    #food-menu {
+    .food-menu {
         width: 700px;
     }
 }
@@ -1169,7 +1185,7 @@ footer {
         text-align: right;
     }
 
-    #food-menu {
+    .food-menu {
         width: 600px;
     }
 }
@@ -1297,7 +1313,7 @@ footer {
         width: 90px;
     }
 
-    #food-menu {
+    .food-menu {
         width: 500px;
     }
 
@@ -1438,7 +1454,7 @@ footer {
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.82), white), url("../img/gift-donut-bg.jpg");
     }
 
-    #food-menu {
+    .food-menu {
         width: 400px;
     }
 }
@@ -1936,7 +1952,7 @@ footer {
         width: 450px;
     }
 
-    #food-menu {
+    .food-menu {
         width: 300px;
     }
 }
