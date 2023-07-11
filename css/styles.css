@@ -871,43 +871,47 @@ footer {
 
 /*** MENU ***/
 
-#menu h1 {
+#menu h1,
+#order h1
+{
     font-size: 100px;
+    margin: 0;
+    position: relative;
+    z-index: 100;
 }
 
-#section-1-menu {
-    background-color: black;
+#section-1-menu,
+#section-1-order
+{
+    background-image: url("../img/pink-yellow-blue-donuts-bg.jpg");
     height: 300px;
     width: 100%;
-    margin-top: -20px;
+    margin-top: 0px;
     color: white;
-}
-
-#section-1-menu span {
-    background-image: url("../img/pink-yellow-blue-donuts.jpg");
-    height: 300px;
-    width: 100%;
-    opacity: 1;
-    position: absolute;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
     background-size: cover;
     background-position-x: center;
-    background-position-y: 500px;
+    background-position-y: -300px;
+    background-repeat: no-repeat;
 }
 
 #section-2-menu {
     display: flex;
     justify-content: center;
+    background-size: contain;
+    background-image: url("../img/donut-print.jpg");
 }
 
 #food-menu {
     height: auto;
     position: relative;
-    width: 500px;
+    width: 900px;
     margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 /********** MEDIA QUERIES **********/
@@ -916,6 +920,10 @@ footer {
 
     #sprinkle-5 {
         bottom: -250px;
+    }
+
+    #food-menu {
+        width: 800px;
     }
 }
 
@@ -1047,6 +1055,10 @@ footer {
     .home-sprinkle {
         width: 100px;
     }
+
+    #food-menu {
+        width: 700px;
+    }
 }
 
 @media screen and (max-width: 1500px)  {
@@ -1142,6 +1154,10 @@ footer {
     #section-8-home h2 {
         width: 500px;
         text-align: right;
+    }
+
+    #food-menu {
+        width: 600px;
     }
 }
 
@@ -1266,6 +1282,16 @@ footer {
 
     #blue-sparks {
         width: 90px;
+    }
+
+    #food-menu {
+        width: 500px;
+    }
+
+    #menu h1,
+    #order h1
+    {
+        font-size: 80px;
     }
 }
 
@@ -1398,6 +1424,10 @@ footer {
         background-position-y: center;
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.82), white), url("../img/gift-donut-bg.jpg");
     }
+
+    #food-menu {
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 1000px)  {
@@ -1528,6 +1558,12 @@ footer {
 @media screen and (max-width: 900px)  {
     #section-8-home {
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.95), white), url("../img/gift-donut-bg.jpg");
+    }
+
+    #menu h1,
+    #order h1
+    {
+        font-size: 65px;
     }
 }
 
@@ -1661,6 +1697,14 @@ footer {
         font-size: 8px !important;
         line-height: 30px !important;
     }
+
+
+    #section-1-menu,
+    #section-1-order
+    {
+        background-attachment: scroll;
+        background-position-y: -70px;
+    }
 }
 
 @media screen and (max-width: 730px)  {
@@ -1695,6 +1739,18 @@ footer {
 
     #section-5-home > div:nth-child(2) > div:nth-child(2) {
         margin-right: 80px;
+    }
+
+    #menu h1,
+    #order h1
+    {
+        font-size: 50px;
+    }
+
+    #section-1-menu,
+    #section-1-order
+    {
+        height: 200px;
     }
 }
 
@@ -1787,6 +1843,18 @@ footer {
     #section-6-home div:nth-child(1) {
         margin-top: -30px;
     }
+
+    #menu h1,
+    #order h1
+    {
+        font-size: 40px;
+    }
+
+    #section-1-menu,
+    #section-1-order
+    {
+        height: 190px;
+    }
 }
 
 @media screen and (max-width: 565px)  {
@@ -1853,6 +1921,10 @@ footer {
 
     #masthead-logo-mobile {
         width: 450px;
+    }
+
+    #food-menu {
+        width: 300px;
     }
 }
 
@@ -2012,6 +2084,12 @@ footer {
 
     #section-6-home button {
         margin-top: -170px;
+    }
+
+    #menu h1,
+    #order h1
+    {
+        font-size: 35px;
     }
 }
 
