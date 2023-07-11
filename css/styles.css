@@ -906,6 +906,19 @@ footer {
     background-image: url("../img/donut-print.jpg");
 }
 
+#section-2-order {
+    background-image: url("../img/donut-print.jpg");
+    background-size: 100vw;
+    text-align: center;
+    height: 90vh;
+    margin-top: -50px;
+}
+
+#section-2-order p {
+    font-size: 30px;
+    padding: 70px 50px 0 50px;
+}
+
 #food-menu {
     height: auto;
     position: relative;
