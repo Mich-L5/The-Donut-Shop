@@ -927,22 +927,6 @@ header i:hover {
     cursor: zoom-out;
 }
 
-/*** FOOTER ***/
-footer {
-    background-color: #ddf3f5;
-    display: flex;
-    justify-content: center;
-    border-top: .5px solid #f47daf;
-    margin-bottom: -5px;
-}
-
-#copyright {
-    color: #f47daf;
-    margin: -2px;
-    font-size: 13px !important;
-    font-family: shapiro-75;
-}
-
 /********** MEDIA QUERIES **********/
 
 @media screen and (max-width: 1800px) {
@@ -2300,3 +2284,97 @@ footer {
     }
 
 }
+
+/*** FOOTER ***/
+/*
+footer {
+    background-color: #ddf3f5;
+    display: flex;
+    justify-content: center;
+    border-top: .5px solid #f47daf;
+    margin-bottom: -5px;
+}
+
+#copyright {
+    color: #f47daf;
+    margin: -2px;
+    font-size: 13px !important;
+    font-family: shapiro-75;
+}*/
+
+footer {
+    background-color: #e5f4f5;
+    border-top: 1px solid #f47daf;
+    position: relative;
+    z-index: 1;
+}
+
+footer > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px 0 30px;
+}
+
+footer img {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#footer p {
+    font-family: shapiro-75;
+    color: #f47daf;
+    font-size: 18px;
+}
+
+footer ul {
+    list-style: none;
+    font-family: halibut-serif-thin;
+    margin-left: -37px;
+    padding-left: 0;
+}
+
+footer li {
+    margin-bottom: 35px;
+}
+
+footer address,
+#phone-email p
+{
+    font-family: halibut-serif-thin;
+    font-style: normal;
+    color: black;
+    font-size: 18px;
+}
+
+#phone {
+    margin-top: 10px;
+    margin-bottom: -22px;
+}
+
+footer fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -5px;
+}
+
+footer label {
+    font-family: halibut-serif-thin;
+    color: black;
+    font-size: 18px;
+}
+
+footer form {
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+footer input {
+    border: none;
+    background-color: #dbeaeb;
+    border-bottom: 1px solid #42b5be;
+    height: 20px;
+}
+
+
