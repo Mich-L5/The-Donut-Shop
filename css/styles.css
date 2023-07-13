@@ -2286,22 +2286,6 @@ header i:hover {
 }
 
 /*** FOOTER ***/
-/*
-footer {
-    background-color: #ddf3f5;
-    display: flex;
-    justify-content: center;
-    border-top: .5px solid #f47daf;
-    margin-bottom: -5px;
-}
-
-#copyright {
-    color: #f47daf;
-    margin: -2px;
-    font-size: 13px !important;
-    font-family: shapiro-75;
-}*/
-
 footer {
     background-color: #e5f4f5;
     border-top: 1px solid #f47daf;
@@ -2482,4 +2466,33 @@ footer button:hover {
 
 #social-media > a:nth-child(4) > div:hover {
     background-image: url("../img/snap-icon-pink.png") ;
+}
+
+#menu footer #copyright-bar p,
+#order footer #copyright-bar p
+{
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+    footer img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer input {
+        width: 150px;
+    }
+
+    footer button {
+        width: 155px;
+    }
+
+    #footer p,
+    #footer label
+    {
+        font-size: 16px;
+    }
+
 }
