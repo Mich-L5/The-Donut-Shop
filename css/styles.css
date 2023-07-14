@@ -2474,9 +2474,25 @@ footer button:hover {
     margin-top: 6px;
 }
 
+#menu #phone,
+#order #phone
+{
+    margin-bottom: -5px;
+}
+
 @media screen and (max-width: 1000px) {
     footer img {
         width: 200px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    #home footer #copyright-bar p {
+       margin-top: 3px;
+    }
+
+    #home #phone {
+        margin-bottom: -3px;
     }
 }
 
@@ -2490,9 +2506,39 @@ footer button:hover {
     }
 
     #footer p,
-    #footer label
+    #footer label,
+    #footer address,
+    #footer button,
+    #footer a
     {
-        font-size: 16px;
+        font-size: 13px;
+    }
+
+    #footer li {
+        margin-bottom: 20px;
+    }
+
+    footer img {
+        width: 150px;
+    }
+
+    #menu footer #copyright-bar p,
+    #order footer #copyright-bar p
+    {
+        margin-top: 10px;
+    }
+
+    #copyright-bar img {
+        height: 18px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    #home #phone {
+        margin-bottom: -5px;
     }
 
 }
