@@ -588,6 +588,22 @@ window.addEventListener("load", function() {
         }
     }
 
+    /* --------------------------------------- */
+    /*      CHANGE FOOTER MOBILE LOGO          */
+    /* --------------------------------------- */
+
+    footerLogo();
+
+    window.addEventListener("resize", footerLogo);
+
+    function footerLogo() {
+        if (window.innerWidth <= 480) {
+            document.querySelector("#footer-logo > img").src = "./img/the-donut-shop-mobile-logo.png";
+        }
+        else {
+            document.querySelector("#footer-logo > img").src = "./img/the-Donut-shop-mini-logo.png";
+        }
+    }
 
 
 });

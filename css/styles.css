@@ -2533,6 +2533,16 @@ footer button:hover {
         margin-top: 10px;
     }
 
+    #social-media div {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    #social-media {
+        margin-top: 0px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -2541,4 +2551,114 @@ footer button:hover {
         margin-bottom: -5px;
     }
 
+    #home footer #copyright-bar p {
+        margin-top: 7px;
+    }
+
 }
+
+@media screen and (max-width: 675px) {
+
+    footer input {
+        width: 100px;
+    }
+
+    footer button {
+        width: 105px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    footer img {
+        width: 120px;
+    }
+
+    footer > div:nth-child(1) {
+        margin: 10px 15px 0 15px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+
+    footer > div:nth-child(1) {
+        margin: 10px 2px 0 2px;
+    }
+
+    footer img {
+        width: 110px;
+    }
+
+    footer input {
+        width: 90px;
+    }
+
+    footer button {
+        width: 95px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    footer > div:nth-child(1) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #footer p,
+    #footer label,
+    #footer address,
+    #footer button,
+    #footer a
+    {
+        font-size: 18px;
+    }
+
+    footer input {
+        width: 200px;
+    }
+
+    footer button {
+        width: 205px;
+        margin-bottom: 30px;
+    }
+
+    #social-media div {
+        width: 35px;
+        height: 35px;
+        margin: 0 7px;
+    }
+
+    #find-us-title,
+    #navigate-title,
+    #contact-title
+    {
+        text-align: center;
+    }
+
+    #footer p,
+    #footer li,
+    #footer address
+    {
+        text-align: center;
+    }
+
+    footer img {
+        width: 200px;
+    }
+
+    #home footer #copyright-bar p {
+        margin-top: 2px;
+    }
+
+}
+
+@media screen and (max-width: 385px) {
+    #footer p {
+        font-size: 13px;
+    }
+}
+
+
