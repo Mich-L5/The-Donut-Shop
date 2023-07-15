@@ -2436,6 +2436,10 @@ footer button:hover {
     margin: 0 7px;
 }
 
+#social-media div:hover {
+    cursor: pointer;
+}
+
 #social-media > a:nth-child(1) > div {
     background-image: url("../img/fb-icon-blue.png") ;
 }
