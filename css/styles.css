@@ -32,6 +32,34 @@ html, body {
     color: black;
 }
 
+/*** LOADING PAGE ***/
+.loading-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1d8e2;
+    z-index: 2004;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-page small {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-family: shapiro-75;
+    color: #42b5be;
+    font-size: 15px;
+}
+
+#loading-icon {
+    height: auto;
+    width: 45px;
+    animation: spin-menu 5s infinite linear;
+    filter: drop-shadow(1px 1px 1.5px rgba(14, 14, 14, 0.42));
+}
+
 /*** CUSTOM SCROLLBAR ***/
 /* Firefox */
 html {

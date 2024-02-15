@@ -1,6 +1,12 @@
 window.addEventListener("load", function() {
 
     /* --------------------------------------- */
+    /*             LOADING PAGE                */
+    /* --------------------------------------- */
+
+    hideLoadingPage();
+
+    /* --------------------------------------- */
     /*             OPEN/CLOSE MENU             */
     /* --------------------------------------- */
 
@@ -608,3 +614,15 @@ window.addEventListener("load", function() {
 
 });
 
+/* --------------------------------------- */
+/*              LOADING PAGE               */
+/* --------------------------------------- */
+
+function hideLoadingPage() {
+
+    // If the loading page component is on the page, hide it upon pageload
+    if (document.querySelector(".loading-page")) {
+        document.querySelector(".loading-page").style.display = "none";
+    }
+ 
+  }

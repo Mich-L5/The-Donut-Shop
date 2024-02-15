@@ -13,104 +13,108 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body id="order">
-<div id="menu-container">
-  <img src="img/menu-text.png" alt="blue text that says menu">
-  <img src="img/donut-logo-no-shadow.png" alt="donut with white glaze icon" id="menu-icon">
-</div>
-
-<header>
-  <span class="menu-bg"></span>
-  <div>
-    <div>
-      <i class="fa-regular fa-circle-xmark" id="x-icon"></i>
-      <nav>
-        <menu>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="order.html">Order/Contact</a></li>
-          </ul>
-        </menu>
-      </nav>
-    </div>
-    <img src="img/The-Donut-shop-mini-logo.png" alt="The Donut Shop logo">
+  <div class="loading-page">
+    <small>Loading...</small>
+    <img src="img/donut-logo-no-shadow.png" alt="donut with white glaze icon" id="loading-icon">
   </div>
-</header>
+  <div id="menu-container">
+    <img src="img/menu-text.png" alt="blue text that says menu">
+    <img src="img/donut-logo-no-shadow.png" alt="donut with white glaze icon" id="menu-icon">
+  </div>
 
-
-<!-- CUSTOM SCROLLBAR -->
-<div id="thumb-container">
-  <img id="scrollbar-thumb" src="img/donut-logo.png" alt="donut icon">
-</div>
-
-<main>
-<section id="section-1-order">
-  <h1>ORDER</h1>
-</section>
-
-<section id="section-2-order">
-  <p>To place an order, please call us at 999-999-9999.</p>
-</section>
-</main>
-<footer id="footer">
-  <div>
-    <div id="footer-logo">
+  <header>
+    <span class="menu-bg"></span>
+    <div>
+      <div>
+        <i class="fa-regular fa-circle-xmark" id="x-icon"></i>
+        <nav>
+          <menu>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="order.html">Order/Contact</a></li>
+            </ul>
+          </menu>
+        </nav>
+      </div>
       <img src="img/The-Donut-shop-mini-logo.png" alt="The Donut Shop logo">
     </div>
-    <div id="footer-menu">
-      <p id="navigate-title">NAVIGATE</p>
-      <menu>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="menu.html">MENU</a></li>
-          <li><a href="order.html">ORDER/CONTACT</a></li>
-        </ul>
-      </menu>
-    </div>
-    <div id="footer-find-us">
-      <p id="find-us-title">FIND US</p>
-      <address>
-        1 Donut Dr <br>
-        Donut Land, DL <br>
-        99999
-      </address>
-      <span id="phone-email">
-                            <p id="phone">999-999-9999</p>
-                            <p id="email">info@thedonutshop.com</p>
-                        </span>
-    </div>
-    <div id="footer-contact">
-      <p id="contact-title">CONTACT</p>
-      <form id="contact-form" action="index.html">
-        <fieldset>
-          <label for="name-input">Name:</label>
-          <input type="text" id="name-input">
-        </fieldset>
-        <fieldset>
-          <label for="email-input">Email:</label>
-          <input type="email" id="email-input">
-        </fieldset>
-        <fieldset>
-          <label for="message-input">Message:</label>
-          <input type="text" id="message-input">
-        </fieldset>
-        <button form="contact-form" value="Submit" type="submit">SEND</button>
-      </form>
-    </div>
+  </header>
+
+
+  <!-- CUSTOM SCROLLBAR -->
+  <div id="thumb-container">
+    <img id="scrollbar-thumb" src="img/donut-logo.png" alt="donut icon">
   </div>
-  <div id="social-media">
-    <a><div></div></a>
-    <a><div></div></a>
-    <a><div></div></a>
-    <a><div></div></a>
-  </div>
-  <div id="copyright-bar">
+
+  <main>
+  <section id="section-1-order">
+    <h1>ORDER</h1>
+  </section>
+
+  <section id="section-2-order">
+    <p>To place an order, please call us at 999-999-9999.</p>
+  </section>
+  </main>
+  <footer id="footer">
     <div>
-      <p>Copyright © 2023 | The Donut Shop Ltd.</p>
-      <img src="img/donut-logo.png" alt="donut logo">
+      <div id="footer-logo">
+        <img src="img/The-Donut-shop-mini-logo.png" alt="The Donut Shop logo">
+      </div>
+      <div id="footer-menu">
+        <p id="navigate-title">NAVIGATE</p>
+        <menu>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="order.html">ORDER/CONTACT</a></li>
+          </ul>
+        </menu>
+      </div>
+      <div id="footer-find-us">
+        <p id="find-us-title">FIND US</p>
+        <address>
+          1 Donut Dr <br>
+          Donut Land, DL <br>
+          99999
+        </address>
+        <span id="phone-email">
+                              <p id="phone">999-999-9999</p>
+                              <p id="email">info@thedonutshop.com</p>
+                          </span>
+      </div>
+      <div id="footer-contact">
+        <p id="contact-title">CONTACT</p>
+        <form id="contact-form" action="index.html">
+          <fieldset>
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input">
+          </fieldset>
+          <fieldset>
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input">
+          </fieldset>
+          <fieldset>
+            <label for="message-input">Message:</label>
+            <input type="text" id="message-input">
+          </fieldset>
+          <button form="contact-form" value="Submit" type="submit">SEND</button>
+        </form>
+      </div>
     </div>
-  </div>
-</footer>
+    <div id="social-media">
+      <a><div></div></a>
+      <a><div></div></a>
+      <a><div></div></a>
+      <a><div></div></a>
+    </div>
+    <div id="copyright-bar">
+      <div>
+        <p>Copyright © 2023 | The Donut Shop Ltd.</p>
+        <img src="img/donut-logo.png" alt="donut logo">
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
