@@ -599,6 +599,7 @@ window.addEventListener("load", function() {
     /*      CHANGE FOOTER MOBILE LOGO          */
     /* --------------------------------------- */
 
+    /*
     footerLogo();
 
     window.addEventListener("resize", footerLogo);
@@ -610,7 +611,7 @@ window.addEventListener("load", function() {
         else {
             document.querySelector("#footer-logo > img").src = "./img/the-Donut-shop-mini-logo.png";
         }
-    }
+    }*/
 
 
 });
