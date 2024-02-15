@@ -49,8 +49,9 @@ window.addEventListener("load", function() {
         let percentage = (window.scrollY/docHeight) * 100;
 
         // prevent donut icon from going all the way to the bottom
-        if (percentage > 96) {
-            percentage = 96
+      
+        if (percentage > 96.5) {
+            percentage = 96.5
         }
 
         document.getElementById("scrollbar-thumb").style.top = (percentage) + "%";
