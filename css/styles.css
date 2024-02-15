@@ -990,12 +990,12 @@ footer nav ul {
 footer nav ul a {
     text-decoration: none;
     padding-left: 20px;
-    color: #42b5be;
+    color: #df7aa4;
     transition: all ease-in-out 0.5s;
 }
 
 footer nav ul a:hover {
-    color: rgb(50, 153, 161);
+    color: #eea3c2;
 }
 
 #copyright-box p {
