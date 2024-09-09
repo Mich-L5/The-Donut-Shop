@@ -9,7 +9,7 @@
 ![The-Donut-Shop-preview](https://github.com/Mich-L5/The-Donut-Shop/assets/99766541/15848051-4f6d-42ac-be98-7431f4c41920)
 
 ## About
-The Donut Shop is a donut shop website for a donut shop which displays a Home page, Menu page, and Contact page.
+The Donut Shop is website including a home page, menu page, and contact page.
 
 ## Live site
 This live site can be accesses [here](https://the-donut-shop.netlify.app/).
