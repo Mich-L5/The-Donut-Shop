@@ -12,7 +12,7 @@
 The Donut Shop is website including a home page, menu page, and contact page.
 
 ## Live site
-This live site can be accesses [here](https://the-donut-shop.netlify.app/).
+This live site can be accessed [here](https://the-donut-shop.netlify.app/).
 
 ## Technologies
 <picture>
@@ -75,7 +75,7 @@ The Home page masthead donuts and logo contain a parallax effect on scroll.
 ### Magnetic sprinkles
 
 > [!NOTE]
-> Available on screen sizes larger than 768px width.
+> This feature is designed for desktop use and only available on screen sizes larger than 768px width.
 
 The New Flavors section on the Home page contains interactive magnetic sprinkles that move away from the cursor when the cursor is hovering nearby.
 
