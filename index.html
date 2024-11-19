@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,237 +11,29 @@
     <link rel="icon" type="image/x-icon" href="./img/donut-logo.png">
     <script src="https://kit.fontawesome.com/36e897625c.js" crossorigin="anonymous"></script>
     <script src="./js/main.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-    <body id="home">
-            <div class="loading-page">
-                <small>Loading...</small>
-                <img src="img/donut-logo-no-shadow.png" alt="donut with white glaze icon" id="loading-icon">
-            </div>
-            <div id="menu-container">
-                <img src="img/menu-text.png" alt="blue text that says menu">
-                <img src="img/donut-logo-no-shadow.png" alt="donut with white glaze icon" id="menu-icon">
-            </div>
 
-            <header>
-                <span class="menu-bg"></span>
-                <div>
-                    <div>
-                        <i class="fa-regular fa-circle-xmark" id="x-icon"></i>
-                        <nav>
-                            <menu>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="menu.html">Menu</a></li>
-                                    <li><a href="order.html">Order/Contact</a></li>
-                                </ul>
-                            </menu>
-                        </nav>
-                    </div>
-                    <img src="img/The-Donut-shop-mini-logo.png" alt="The Donut Shop logo">
-                </div>
-            </header>
+<body id="home">
+    <div class="loading-page">
+        <small>Loading...</small>
+        <img src="img/donut-logo-no-shadow.png" alt="donut with white glaze icon" id="loading-icon">
+    </div>
+    <div id="menu-container">
+        <img src="img/menu-text.png" alt="blue text that says menu">
+        <img src="img/donut-logo-no-shadow.png" alt="donut with white glaze icon" id="menu-icon">
+    </div>
 
-
-            <!-- CUSTOM SCROLLBAR -->
-            <div id="thumb-container">
-                <img id="scrollbar-thumb" src="img/donut-logo.png" alt="donut icon">
-            </div>
-
-            <main>
-
-
-            <!--  SECTION 1 -->
-            <section id="section-1-home">
-                <video id="sprinkles-video" autoplay loop muted playsinline>
-                    <source src="video/sprinkles.mp4" type="video/mp4">
-                </video>
-                <img id="masthead-logo" class="masthead-logo" src="./img/the-donut-shop-logo.png" alt="Donut Shop Logo">
-                <img id="masthead-logo-mobile" class="masthead-logo" src="./img/the-donut-shop-mobile-logo.png" alt="Donut Shop Logo">
-
-                <!--  donut container -->
-                <div id="donut-container">
-
-                    <!-- top row -->
-                    <div class="masthead-donut-row" id="top-donut-row">
-                        <img id="dt1" src="./img/powdered-donut.png" alt="White powdered donut" class="masthead-donut">
-                    </div>
-                    <!-- middle row -->
-                    <div class="masthead-donut-row" id="middle-donut-row">
-                        <img id="dm1" src="./img/drizzle-donut.png" alt="Donut with white glaze and pink drizzle" class="masthead-donut">
-                        <img id="dm2" src="./img/blueberry-donut.png" alt="Donut with pink glaze and blueberries" class="masthead-donut">
-                        <img id="dm3" src="./img/coconut-donut.png" alt="Donut with pink glaze and coconut" class="masthead-donut">
-                        <img id="dm4" src="./img/drizzle-donut.png" alt="Donut with white glaze and pink drizzle" class="masthead-donut">
-                        <img id="dm5" src="./img/coconut-donut.png" alt="Donut with pink glaze and coconut" class="masthead-donut">
-                    </div>
-
-                    <!-- bottom row -->
-                    <div class="masthead-donut-row" id="bottom-donut-row">
-                        <img id="dbl" src="./img/glitter-donut.png" alt="Donut with pink glaze and gold glitter" class="masthead-donut">
-                        <img id="db1" src="./img/polka-dot-donut.png" alt="Donut with pink glaze and pink polka dots" class="masthead-donut">
-                        <img id="db2" src="./img/powdered-donut.png" alt="White powdered donut" class="masthead-donut">
-                        <img id="db3" src="./img/blueberry-donut.png" alt="Donut with pink glaze and blueberries" class="masthead-donut">
-                        <img id="db4" src="./img/glitter-donut.png" alt="Donut with pink glaze and gold glitter" class="masthead-donut">
-                        <img id="db5" src="./img/powdered-donut.png" alt="White powdered donut" class="masthead-donut">
-                        <img id="db6" src="./img/polka-dot-donut.png" alt="Donut with pink glaze and pink polka dots" class="masthead-donut">
-                        <img id="db7" src="./img/glitter-donut.png" alt="Donut with pink glaze and gold glitter" class="masthead-donut">
-                        <img id="db8" src="./img/powdered-donut.png" alt="White powdered donut" class="masthead-donut">
-                        <img id="db9" src="./img/blueberry-donut.png" alt="Donut with pink glaze and blueberries" class="masthead-donut">
-                        <img id="dbr" src="./img/polka-dot-donut.png" alt="Donut with pink glaze and pink polka dots" class="masthead-donut">
-                    </div>
-                </div>
-            </section>
-
-             <!--  SECTION 2 -->
-             <section id="section-2-home">
-
-                 <!-- video for desktop displays -->
-                 <video id="donuts-video" autoplay loop muted playsinline>
-                     <source src="./video/donuts.mp4" type="video/mp4">
-                 </video>
-
-                 <!-- img BG for mobile displays -->
-                 <div id="mobile-donut-sprinkles-bg"></div>
-
-                 <div id="section2-content">
-                     <h1 id="title">New Flavors</h1>
-                     <p id="s2-p">Try our new Pistachio Cream, Strawberry Shortcake, and Fruits & Flowers donuts!</p>
-                     <button class="blue-pink-btn">ORDER NOW</button>
-                 </div>
-
-                 <!-- sprinkles -->
-                 <!-- white -->
-                 <img id="sprinkle-1" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
-                 <img id="sprinkle-2" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
-                 <img id="sprinkle-3" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
-                 <img id="sprinkle-4" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
-                 <img id="sprinkle-5" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
-                 <img id="sprinkle-6" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
-                 <img id="sprinkle-7" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
-                 <img id="sprinkle-8" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
-
-                 <!-- orange -->
-                 <img id="sprinkle-9" class="home-sprinkle" src="img/sprinkle-or.png" alt="orange sprinkle">
-                 <img id="sprinkle-10" class="home-sprinkle" src="img/sprinkle-or.png" alt="orange sprinkle">
-                 <img id="sprinkle-11" class="home-sprinkle" src="img/sprinkle-or.png" alt="orange sprinkle">
-
-                 <!-- red -->
-                 <img id="sprinkle-12" class="home-sprinkle" src="img/sprinkle-rd.png" alt="red sprinkle">
-                 <img id="sprinkle-13" class="home-sprinkle" src="img/sprinkle-rd.png" alt="red sprinkle">
-                 <img id="sprinkle-14" class="home-sprinkle" src="img/sprinkle-rd.png" alt="red sprinkle">
-                 <img id="sprinkle-15" class="home-sprinkle" src="img/sprinkle-rd.png" alt="red sprinkle">
-
-                 <!-- blue -->
-                 <img id="sprinkle-16" class="home-sprinkle" src="img/sprinkle-bl.png" alt="blue sprinkle">
-                 <img id="sprinkle-17" class="home-sprinkle" src="img/sprinkle-bl.png" alt="blue sprinkle">
-                 <img id="sprinkle-18" class="home-sprinkle" src="img/sprinkle-bl.png" alt="blue sprinkle">
-                 <img id="sprinkle-19" class="home-sprinkle" src="img/sprinkle-bl.png" alt="blue sprinkle">
-
-                 <!-- yellow -->
-                 <img id="sprinkle-20" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
-                 <img id="sprinkle-21" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
-                 <img id="sprinkle-22" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
-                 <img id="sprinkle-23" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
-                 <img id="sprinkle-24" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
-                 <img id="sprinkle-25" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
-                 <img id="sprinkle-26" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
-
-                 <!-- green -->
-                 <img id="sprinkle-27" class="home-sprinkle" src="img/sprinkle-gr.png" alt="green sprinkle">
-                 <img id="sprinkle-28" class="home-sprinkle" src="img/sprinkle-gr.png" alt="green sprinkle">
-                 <img id="sprinkle-29" class="home-sprinkle" src="img/sprinkle-gr.png" alt="green sprinkle">
-                 <img id="sprinkle-30" class="home-sprinkle" src="img/sprinkle-gr.png" alt="green sprinkle">
-            </section>
-
-            <!--  SECTION 3 -->
-            <section id="section-3-home" class="section-resize">
-                <div>
-                    <h2>The Glam Donut</h2>
-                    <div>
-                        <p>Strawberry & Vanilla.</p>
-                        <p>Edible Jewels Decor.</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="./img/The-Donut-Shop-mini-logo.png" alt="The Donut Shop logo" id="mini-ds-logo">
-                    <button class="blue-pink-btn btn-reg-height">TRY ONE TODAY</button>
-                </div>
-            </section>
-
-            <!--  SECTION 4 -->
-            <section id="section-4-home" class="section-resize">
-                <div>
-                    <h2 id="new-text">NEW NEW NEW</h2>
-                </div>
-                <div>
-                    <p>Milk + donut snack combo</p>
-                    <p>$5.99/ea</p>
-                    <button class="blue-pink-btn btn-reg-height">SEE FLAVOURS</button>
-                </div>
-            </section>
-
-            <!--  SECTION 5 -->
-            <section id="section-5-home" class="section-resize">
-                <div>
-                    <div class="donut-sketch-container">
-                        <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
-                        <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
-                        <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
-                    </div>
-                    <div>
-                        <img src="img/donut-tower.png" alt="stack of 4 donuts" id="donut-tower">
-                        <img src="img/teal-spark.png" alt="teal blue spark lines" id="blue-sparks">
-                    </div>
-                </div>
-                <div>
-                    <div class="donut-sketch-container">
-                        <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
-                        <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
-                        <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
-                        <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
-                        <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
-                    </div>
-                    <div class="left-justified-container">
-                        <h2 class="pink-fill-text">DEAL OF THE WEEK!</h2>
-                        <p>4 for $9.99</p>
-                        <button class="blue-pink-btn btn-reg-height">SEE FLAVOURS</button>
-                    </div>
-                </div>
-            </section>
-
-            <!--  SECTION 6 -->
-            <section id="section-6-home" class="section-resize">
-                <div>
-                    <h2>In Season!</h2>
-                    <p>Powder Strawberry, Strawberry Maple, Strawberry Chocolate Sprinkles</p>
-                </div>
-                <div>
-                    <button class="blue-pink-btn btn-reg-height" id="section-6-home-btn">TRY ONE TODAY</button>
-                </div>
-            </section>
-
-            <!--  SECTION 7 -->
-            <section id="section-7-home" class="section-resize">
-                <div>
-                    <h2>Store Hours</h2>
-                    <p>Mon-Sat 8am-10pm, Sun: 9am-8pm</p>
-                </div>
-            </section>
-
-            <!--  SECTION 8 -->
-            <section id="section-8-home" class="section-resize">
-                <div>
-                    <h2>Gift Wrapping</h2>
-                    <p>Available on all orders. Starts at $1.99.</p>
-                    <button class="blue-pink-btn btn-reg-height">PLACE AN ORDER</button>
-                </div>
-            </section>
-            </main>
-            <footer>
-                <div id="copyright-box">
-                    <p id="copyright-text">Copyright © 2023 | The Donut Shop Ltd.</p>
-                    <img src="img/donut-logo.png" alt="donut logo" id="footer-logo">
-                </div>
+    <header>
+        <span class="menu-bg"></span>
+        <div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                    fill="#2f97a0" id="x-icon">
+                    <path
+                        d="m480-429.72 124.09 123.09q9.76 10.76 24.52 10.88 14.76.12 25.76-11 10.24-10.12 10.24-24.7t-10.24-25.7L530.28-480l124.09-124.09q9.76-9.76 10-24.52.24-14.76-10-25.76-11.1-10.24-25.64-10.24-14.54 0-24.64 10.24L480-530.28 356.91-654.37q-10.76-9.76-25.4-10-14.64-.24-24.64 10-11.24 11.1-11.24 25.64 0 14.54 11.24 24.64L429.72-480 306.63-356.91q-10.76 10.76-10.88 25.4-.12 14.64 11 24.64 10.12 11.24 24.7 11.24t25.7-11.24L480-429.72Zm.03 366.92q-86.27 0-162.13-32.88-75.86-32.89-132.6-89.62-56.73-56.74-89.62-132.57-32.88-75.82-32.88-162.1 0-86.27 32.88-162.51 32.89-76.24 89.59-132.99 56.7-56.75 132.54-89.36 75.84-32.6 162.14-32.6 86.29 0 162.56 32.58 76.26 32.59 133 89.31 56.73 56.72 89.33 132.97 32.59 76.25 32.59 162.57 0 86.31-32.6 162.16-32.61 75.85-89.36 132.56-56.75 56.71-132.96 89.6-76.2 32.88-162.48 32.88Z" />
+                </svg>
                 <nav>
                     <menu>
                         <ul>
@@ -250,6 +43,235 @@
                         </ul>
                     </menu>
                 </nav>
-            </footer>
-    </body>
+            </div>
+            <img src="img/The-Donut-shop-mini-logo.png" alt="The Donut Shop logo">
+        </div>
+    </header>
+
+
+    <!-- CUSTOM SCROLLBAR -->
+    <div id="thumb-container">
+        <img id="scrollbar-thumb" src="img/donut-logo.png" alt="donut icon">
+    </div>
+
+    <main>
+
+
+        <!--  SECTION 1 -->
+        <section id="section-1-home">
+            <video id="sprinkles-video" autoplay loop muted playsinline>
+                <source src="video/sprinkles.mp4" type="video/mp4">
+            </video>
+            <img id="masthead-logo" class="masthead-logo" src="./img/the-donut-shop-logo.png" alt="Donut Shop Logo">
+            <img id="masthead-logo-mobile" class="masthead-logo" src="./img/the-donut-shop-mobile-logo.png"
+                alt="Donut Shop Logo">
+
+            <!--  donut container -->
+            <div id="donut-container">
+
+                <!-- top row -->
+                <div class="masthead-donut-row" id="top-donut-row">
+                    <img id="dt1" src="./img/powdered-donut.png" alt="White powdered donut" class="masthead-donut">
+                </div>
+                <!-- middle row -->
+                <div class="masthead-donut-row" id="middle-donut-row">
+                    <img id="dm1" src="./img/drizzle-donut.png" alt="Donut with white glaze and pink drizzle"
+                        class="masthead-donut">
+                    <img id="dm2" src="./img/blueberry-donut.png" alt="Donut with pink glaze and blueberries"
+                        class="masthead-donut">
+                    <img id="dm3" src="./img/coconut-donut.png" alt="Donut with pink glaze and coconut"
+                        class="masthead-donut">
+                    <img id="dm4" src="./img/drizzle-donut.png" alt="Donut with white glaze and pink drizzle"
+                        class="masthead-donut">
+                    <img id="dm5" src="./img/coconut-donut.png" alt="Donut with pink glaze and coconut"
+                        class="masthead-donut">
+                </div>
+
+                <!-- bottom row -->
+                <div class="masthead-donut-row" id="bottom-donut-row">
+                    <img id="dbl" src="./img/glitter-donut.png" alt="Donut with pink glaze and gold glitter"
+                        class="masthead-donut">
+                    <img id="db1" src="./img/polka-dot-donut.png" alt="Donut with pink glaze and pink polka dots"
+                        class="masthead-donut">
+                    <img id="db2" src="./img/powdered-donut.png" alt="White powdered donut" class="masthead-donut">
+                    <img id="db3" src="./img/blueberry-donut.png" alt="Donut with pink glaze and blueberries"
+                        class="masthead-donut">
+                    <img id="db4" src="./img/glitter-donut.png" alt="Donut with pink glaze and gold glitter"
+                        class="masthead-donut">
+                    <img id="db5" src="./img/powdered-donut.png" alt="White powdered donut" class="masthead-donut">
+                    <img id="db6" src="./img/polka-dot-donut.png" alt="Donut with pink glaze and pink polka dots"
+                        class="masthead-donut">
+                    <img id="db7" src="./img/glitter-donut.png" alt="Donut with pink glaze and gold glitter"
+                        class="masthead-donut">
+                    <img id="db8" src="./img/powdered-donut.png" alt="White powdered donut" class="masthead-donut">
+                    <img id="db9" src="./img/blueberry-donut.png" alt="Donut with pink glaze and blueberries"
+                        class="masthead-donut">
+                    <img id="dbr" src="./img/polka-dot-donut.png" alt="Donut with pink glaze and pink polka dots"
+                        class="masthead-donut">
+                </div>
+            </div>
+        </section>
+
+        <!--  SECTION 2 -->
+        <section id="section-2-home">
+
+            <!-- video for desktop displays -->
+            <video id="donuts-video" autoplay loop muted playsinline>
+                <source src="./video/donuts.mp4" type="video/mp4">
+            </video>
+
+            <!-- img BG for mobile displays -->
+            <div id="mobile-donut-sprinkles-bg"></div>
+
+            <div id="section2-content">
+                <h1 id="title">New Flavors</h1>
+                <p id="s2-p">Try our new Pistachio Cream, Strawberry Shortcake, and Fruits & Flowers donuts!</p>
+                <button class="blue-pink-btn">ORDER NOW</button>
+            </div>
+
+            <!-- sprinkles -->
+            <!-- white -->
+            <img id="sprinkle-1" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
+            <img id="sprinkle-2" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
+            <img id="sprinkle-3" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
+            <img id="sprinkle-4" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
+            <img id="sprinkle-5" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
+            <img id="sprinkle-6" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
+            <img id="sprinkle-7" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
+            <img id="sprinkle-8" class="home-sprinkle" src="img/sprinkle-wt.png" alt="white sprinkle">
+
+            <!-- orange -->
+            <img id="sprinkle-9" class="home-sprinkle" src="img/sprinkle-or.png" alt="orange sprinkle">
+            <img id="sprinkle-10" class="home-sprinkle" src="img/sprinkle-or.png" alt="orange sprinkle">
+            <img id="sprinkle-11" class="home-sprinkle" src="img/sprinkle-or.png" alt="orange sprinkle">
+
+            <!-- red -->
+            <img id="sprinkle-12" class="home-sprinkle" src="img/sprinkle-rd.png" alt="red sprinkle">
+            <img id="sprinkle-13" class="home-sprinkle" src="img/sprinkle-rd.png" alt="red sprinkle">
+            <img id="sprinkle-14" class="home-sprinkle" src="img/sprinkle-rd.png" alt="red sprinkle">
+            <img id="sprinkle-15" class="home-sprinkle" src="img/sprinkle-rd.png" alt="red sprinkle">
+
+            <!-- blue -->
+            <img id="sprinkle-16" class="home-sprinkle" src="img/sprinkle-bl.png" alt="blue sprinkle">
+            <img id="sprinkle-17" class="home-sprinkle" src="img/sprinkle-bl.png" alt="blue sprinkle">
+            <img id="sprinkle-18" class="home-sprinkle" src="img/sprinkle-bl.png" alt="blue sprinkle">
+            <img id="sprinkle-19" class="home-sprinkle" src="img/sprinkle-bl.png" alt="blue sprinkle">
+
+            <!-- yellow -->
+            <img id="sprinkle-20" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
+            <img id="sprinkle-21" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
+            <img id="sprinkle-22" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
+            <img id="sprinkle-23" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
+            <img id="sprinkle-24" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
+            <img id="sprinkle-25" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
+            <img id="sprinkle-26" class="home-sprinkle" src="img/sprinkle-yw.png" alt="yellow sprinkle">
+
+            <!-- green -->
+            <img id="sprinkle-27" class="home-sprinkle" src="img/sprinkle-gr.png" alt="green sprinkle">
+            <img id="sprinkle-28" class="home-sprinkle" src="img/sprinkle-gr.png" alt="green sprinkle">
+            <img id="sprinkle-29" class="home-sprinkle" src="img/sprinkle-gr.png" alt="green sprinkle">
+            <img id="sprinkle-30" class="home-sprinkle" src="img/sprinkle-gr.png" alt="green sprinkle">
+        </section>
+
+        <!--  SECTION 3 -->
+        <section id="section-3-home" class="section-resize">
+            <div>
+                <h2>The Glam Donut</h2>
+                <div>
+                    <p>Strawberry & Vanilla.</p>
+                    <p>Edible Jewels Decor.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/The-Donut-Shop-mini-logo.png" alt="The Donut Shop logo" id="mini-ds-logo">
+                <button class="blue-pink-btn btn-reg-height">TRY ONE TODAY</button>
+            </div>
+        </section>
+
+        <!--  SECTION 4 -->
+        <section id="section-4-home" class="section-resize">
+            <div>
+                <h2 id="new-text">NEW NEW NEW</h2>
+            </div>
+            <div>
+                <p>Milk + donut snack combo</p>
+                <p>$5.99/ea</p>
+                <button class="blue-pink-btn btn-reg-height">SEE FLAVOURS</button>
+            </div>
+        </section>
+
+        <!--  SECTION 5 -->
+        <section id="section-5-home" class="section-resize">
+            <div>
+                <div class="donut-sketch-container">
+                    <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
+                    <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
+                    <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
+                </div>
+                <div>
+                    <img src="img/donut-tower.png" alt="stack of 4 donuts" id="donut-tower">
+                    <img src="img/teal-spark.png" alt="teal blue spark lines" id="blue-sparks">
+                </div>
+            </div>
+            <div>
+                <div class="donut-sketch-container">
+                    <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
+                    <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
+                    <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
+                    <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
+                    <img src="img/donut-sketch.png" alt="light grey donut sketch" class="donut-sketch">
+                </div>
+                <div class="left-justified-container">
+                    <h2 class="pink-fill-text">DEAL OF THE WEEK!</h2>
+                    <p>4 for $9.99</p>
+                    <button class="blue-pink-btn btn-reg-height">SEE FLAVOURS</button>
+                </div>
+            </div>
+        </section>
+
+        <!--  SECTION 6 -->
+        <section id="section-6-home" class="section-resize">
+            <div>
+                <h2>In Season!</h2>
+                <p>Powder Strawberry, Strawberry Maple, Strawberry Chocolate Sprinkles</p>
+            </div>
+            <div>
+                <button class="blue-pink-btn btn-reg-height" id="section-6-home-btn">TRY ONE TODAY</button>
+            </div>
+        </section>
+
+        <!--  SECTION 7 -->
+        <section id="section-7-home" class="section-resize">
+            <div>
+                <h2>Store Hours</h2>
+                <p>Mon-Sat 8am-10pm, Sun: 9am-8pm</p>
+            </div>
+        </section>
+
+        <!--  SECTION 8 -->
+        <section id="section-8-home" class="section-resize">
+            <div>
+                <h2>Gift Wrapping</h2>
+                <p>Available on all orders. Starts at $1.99.</p>
+                <button class="blue-pink-btn btn-reg-height">PLACE AN ORDER</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="copyright-box">
+            <p id="copyright-text">Copyright © 2023 | The Donut Shop Ltd.</p>
+            <img src="img/donut-logo.png" alt="donut logo" id="footer-logo">
+        </div>
+        <nav>
+            <menu>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order/Contact</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </footer>
+</body>
+
 </html>

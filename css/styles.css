@@ -226,6 +226,10 @@ header i:hover {
     color: #28868d;
 }
 
+#x-icon {
+    cursor: pointer;
+    margin: 12px 0 -10px 7px;
+}
 
 /*** HOME SECTION 1 ***/
 #section-1-home {
