@@ -27,8 +27,8 @@ This live site can be accessed [here](https://the-donut-shop.netlify.app/).
 
 ## How to use
 
-### Open the app
-Click [here](https://the-donut-shop.netlify.app/) to open the app.
+### Open the site
+Click [here](https://the-donut-shop.netlify.app/) to open the site.
 
 ## Features
 
