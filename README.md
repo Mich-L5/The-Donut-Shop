@@ -11,8 +11,10 @@
 ## About
 The Donut Shop is website including a home page, menu page, and contact page.
 
+
 ## Live site
 This live site can be accessed [here](https://the-donut-shop.netlify.app/).
+
 
 ## Technologies
 <picture>
@@ -25,12 +27,10 @@ This live site can be accessed [here](https://the-donut-shop.netlify.app/).
   <img alt="JS badge" src="https://img.shields.io/badge/JavaScript-fff5fd">
 </picture>
 
-## How to use
-
-### Open the site
-Click [here](https://the-donut-shop.netlify.app/) to open the site.
+<br>
 
 ## Features
+
 
 ### Loading screen
 A loading screen with a spinning donut appears on all site pages while the DOM is rendering.
@@ -74,8 +74,7 @@ The Home page masthead donuts and logo contain a parallax effect on scroll.
 
 ### Magnetic sprinkles
 
-> [!NOTE]
-> This feature is designed for desktop use and only available on screen sizes larger than 768px width.
+![Note that says 'This feature is designed for desktop use and only available on screen sizes larger than 768px width.'](https://github.com/user-attachments/assets/4c9529b0-7224-4e56-9377-73f0736ead0c)
 
 The New Flavors section on the Home page contains interactive magnetic sprinkles that move away from the cursor when the cursor is hovering nearby.
 
@@ -98,3 +97,6 @@ The menu on the Menu page can be zoomed in/out using the magnifying glass cursor
 
 ### Responsive
 The website is responsive on mobile, tablet, and desktop.
+
+![The Donut Shop home page in 3 formats: mobile, tablet, and desktop](https://github.com/user-attachments/assets/aa6654e4-628f-4795-89bf-2635df4ff0ad)
+
