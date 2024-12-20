@@ -1,9 +1,9 @@
 # The Donut Shop
 <picture>
-  <img alt="Developer badge" src="https://img.shields.io/badge/Developer-Mich--L5-a9e2e6">
+  <img alt="Developer badge" src="https://img.shields.io/badge/Developer-Mich--L5-a9e2e6?logo=github&logoColor=white">
 </picture>
 <picture>
-  <img alt="Designer badge" src="https://img.shields.io/badge/Designer-Mich--L5-f579ad">
+  <img alt="Designer badge" src="https://img.shields.io/badge/Designer-Mich--L5-f579ad?logo=github&logoColor=white">
 </picture>
 
 ![The-Donut-Shop-preview](https://github.com/Mich-L5/The-Donut-Shop/assets/99766541/15848051-4f6d-42ac-be98-7431f4c41920)
