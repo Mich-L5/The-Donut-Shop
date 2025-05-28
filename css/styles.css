@@ -401,6 +401,7 @@ header i:hover {
     transition: 0.5s ease all;
     padding: 7px 45px;
     font-size: 28px;
+    position: relative;
 }
 
 #section-2-home button {
@@ -794,7 +795,12 @@ header i:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-position-x: center;
+    background-position: center;
+    padding-bottom: 60px;
+}
+
+#section-6-home button {
+    margin-bottom: 70px;
 }
 
 #section-6-home h2 {
@@ -810,10 +816,6 @@ header i:hover {
 #section-6-home > div:nth-child(2) {
     display: flex;
     justify-content: center;
-}
-
-#section-6-home button {
-    margin-top: -235px;
 }
 
 #section-6-home-btn {
@@ -884,6 +886,8 @@ header i:hover {
 #section-8-home button {
     align-self: flex-end;
 }
+
+
 
 /*** MENU ***/
 
@@ -1187,9 +1191,6 @@ footer img {
         width: 120px;
     }
 
-    #section-6-home button {
-        margin-top: -170px;
-    }
 }
 
 @media screen and (max-width: 1450px) {
@@ -1246,7 +1247,7 @@ footer img {
     }
 
     #section-6-home button {
-        margin-top: -140px;
+        margin-bottom: 20px;
     }
 
     #section-8-home > div {
@@ -2175,6 +2176,10 @@ footer img {
 
     #section-8-home h2 {
         width: 100vw;
+    }
+
+    #section-8-home a {
+        align-self: center;
     }
 }
 
